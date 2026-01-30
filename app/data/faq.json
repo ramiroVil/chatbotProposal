@@ -1,74 +1,338 @@
 [
-  {
-    "id": "err_patient_data_001",
-    "intent": "error",
-    "question": "No puedo crear el documento porque el paciente no tiene número de teléfono",
-    "answer": "La creación del documento requiere datos completos del paciente. Ingresa al perfil del paciente y actualiza su número de teléfono para continuar."
-  },
-  {
-    "id": "err_patient_data_002",
-    "intent": "error",
-    "question": "Me aparece error porque el correo del paciente está vacío",
-    "answer": "El correo es obligatorio para este tipo de documento. Actualiza el correo desde la ficha del paciente e intenta nuevamente."
-  },
-  {
-    "id": "err_missing_org_001",
-    "intent": "error",
-    "question": "No puedo avanzar porque no seleccioné la organización",
-    "answer": "Primero debes seleccionar la organización. Luego el programa asociado y finalmente el tipo de documento. Sigue el orden del flujo."
-  },
-  {
-    "id": "err_missing_program_001",
-    "intent": "error",
-    "question": "Sale error porque no he elegido un programa",
-    "answer": "Después de elegir la organización debes seleccionar el programa correspondiente. Esto habilita los documentos disponibles."
-  },
-  {
-    "id": "err_doc_type_001",
-    "intent": "error",
-    "question": "El sistema dice que el tipo de documento no es válido",
-    "answer": "Verifica que el documento esté disponible para la organización y programa seleccionados. Si persiste, contacta al equipo funcional."
-  },
-  {
-    "id": "err_validation_001",
-    "intent": "error",
-    "question": "Me marca error de validación antes de generar el documento",
-    "answer": "Revisa los campos obligatorios en pantalla. Cualquier dato faltante del paciente o del flujo debe completarse para continuar."
-  },
-  {
-    "id": "flow_steps_001",
-    "intent": "flujo",
-    "question": "Cuál es el flujo correcto para crear un documento",
-    "answer": "El flujo es: 1) Seleccionar organización, 2) Seleccionar programa, 3) Elegir tipo de documento, 4) Validar datos del paciente, 5) Crear documento."
-  },
-  {
-    "id": "flow_help_001",
-    "intent": "flujo",
-    "question": "No conozco el flujo de creación de documentos, ¿qué hago?",
-    "answer": "Ingresa primero a la organización, selecciona el programa y luego el documento. Si necesitas más detalle consulta la guía interna /Flows/Document-Creation."
-  },
-  {
-    "id": "flow_patient_validation_001",
-    "intent": "flujo",
-    "question": "Qué datos del paciente se necesitan para crear un documento",
-    "answer": "Debes tener configurados: nombre completo, documento de identidad, correo y número de teléfono. Todos deben estar completos para generar documentos."
-  },
-  {
-    "id": "flow_precheck_001",
-    "intent": "flujo",
-    "question": "Cómo verifico si el paciente tiene los datos completos",
-    "answer": "Ve al perfil del paciente y revisa los campos marcados como obligatorios. Si falta algo, complétalo antes de iniciar el flujo."
-  },
-  {
-    "id": "flow_org_program_relation_001",
-    "intent": "flujo",
-    "question": "Por qué tengo que seleccionar organización antes que programa",
-    "answer": "Los programas dependen de la organización. Al seleccionar la organización se habilitan los programas asociados, y luego los documentos permitidos."
-  },
-  {
-    "id": "flow_doc_selection_001",
-    "intent": "flujo",
-    "question": "Dónde elijo el tipo de documento a generar",
-    "answer": "Una vez seleccionados la organización y el programa, se habilita el listado de documentos disponibles. Selecciona uno para continuar."
-  }
+    {
+      "id": "a8e7f7c4-4c3b-4c7d-bc2e-5e9b6a71f8d2",
+      "intent": "information",
+      "question": "What requirements must a client meet to receive forms through the portal?",
+      "answer": "The client must: (1) have an active portal account, (2) have a valid email address registered in their profile, and (3) be able to authenticate in the portal (web or mobile). Without these requirements, the client will not see or be able to complete assigned forms."
+    },
+    {
+      "id": "5f2d3b19-8f44-4f0e-9c3d-0b8e9fc2a412",
+      "intent": "error",
+      "question": "Why isn’t my client receiving the forms through the portal? Are there requirements they might be missing?",
+      "answer": "This usually happens when a required condition is not met. Verify that the client (1) has an active portal account, (2) has a valid email address in their profile, and (3) can successfully authenticate in the portal (web or mobile). If any of these are missing, assigned forms may not appear."
+    },
+    {
+      "id": "e1c74d90-1a2e-4b37-9456-1ddc7a6b9330",
+      "intent": "flow",
+      "question": "What steps must a client complete before they can receive assigned forms through the portal?",
+      "answer": "Use this setup flow: (1) ensure the client’s portal account is created and active, (2) confirm a valid email address is registered in the client profile, and (3) verify the client can sign in to the portal (web or mobile). After these steps, assigned forms will be available in the portal."
+    },
+    {
+      "id": "9bb0df64-3c5a-4fd1-a6ac-77e8b7da9f91",
+      "intent": "information",
+      "question": "Does the client need to have an active portal account to receive forms?",
+      "answer": "Yes. Portal activation is required for the client to receive and complete assigned forms. If the account is not active, the client will not see the forms."
+    },
+    {
+      "id": "4c7b923f-2165-4bc8-bbc4-1f0c47ae2ced",
+      "intent": "error",
+      "question": "My client is not receiving any forms—could it be because their portal account is not active?",
+      "answer": "Yes, this issue often occurs when the client's portal account is inactive. A client must have an active portal account to receive assigned forms. If the account is inactive, the portal will not display or deliver forms. Reactivating the account usually resolves the problem."
+    },
+    {
+      "id": "7adf9b1e-3a47-4b8d-94a3-0b2b8145eede",
+      "intent": "flow",
+      "question": "At what point in the setup flow does the client need an active portal account to receive forms?",
+      "answer": "The client must have an active portal account early in the setup flow. After the account is activated, the system can assign forms and make them available in the portal. Without an active account, the workflow cannot continue and forms cannot be delivered."
+    },
+    {
+      "id": "0fe5b9a2-94d8-4d0a-afb1-13e494eaaf30",
+      "intent": "information",
+      "question": "Is it mandatory for the client to have a registered email to use Portal Form Assignment?",
+      "answer": "Yes. The email is needed for portal activation and form notifications. Make sure the registered email matches the one the client uses to log in."
+    },
+    {
+      "id": "5b6ef0c9-f8bd-4ce8-9eba-6f119bd60f2d",
+      "intent": "error",
+      "question": "A client isn’t receiving form notifications—could this be because they don’t have a registered email in their profile?",
+      "answer": "Yes. If the client does not have a registered email in their profile, the portal cannot complete activation or send form-related notifications. Make sure the email is added and that it matches the one the client uses to log in to the portal. Missing or mismatched emails commonly cause this issue."
+    },
+    {
+      "id": "8e4f1c0e-6a32-4afc-834b-214fcd576b44",
+      "intent": "flow",
+      "question": "At what point in the setup flow does the client need to have a registered email to use Portal Form Assignment?",
+      "answer": "The client needs a registered email early in the setup flow. The email is required to activate the portal account and to enable delivery of form notifications. Once the email is added and matches the one the client uses to log in, the system can continue the workflow and allow the client to receive and complete assigned forms."
+    },
+    {
+      "id": "f1dc3f9a-1ad2-4825-a471-59c24a8cd369",
+      "intent": "information",
+      "question": "What permissions does the staff need to assign portal forms?",
+      "answer": "Staff must have permissions to: (1) view the client, (2) access the forms module, (3) assign portal forms, and if applicable, (4) link forms to appointments. Without these permissions, assignment may fail or be unavailable."
+    },
+    {
+      "id": "6dc2b1c0-a2c0-4cfa-b93d-9de1f3580456",
+      "intent": "error",
+      "question": "Staff are unable to assign portal forms—could this be caused by missing permissions?",
+      "answer": "Yes. This issue often occurs when required permissions are missing. Staff must have the ability to: (1) View the client, (2) Access the forms module, (3) Assign portal forms, and (4) If applicable, link forms to appointments."
+    },
+    {
+      "id": "9f15b0b4-2c7e-4a08-8bb1-bae3c938134a",
+      "intent": "flow",
+      "question": "Which permissions must staff have in place during the workflow in order to assign portal forms successfully?",
+      "answer": "During the form‑assignment workflow, staff must have the following permissions enabled: (1) Permission to view the client, (2) Access to the forms module, (3) Permission to assign portal forms, and (4) If the workflow includes appointments, permission to link forms to those appointments."
+    },
+    {
+      "id": "94d0c42a-6eb1-4e38-a9b2-c5719a04b99c",
+      "intent": "information",
+      "question": "What requirements must a form meet to be assigned to the portal?",
+      "answer": "The form must be enabled for portal, published/available, and allow client submission. If a form is not configured for portal, it cannot be assigned."
+    },
+    {
+      "id": "20a5f323-9e8f-4fd3-8538-f6d73954c9fa",
+      "intent": "error",
+      "question": "The form isn’t appearing as assignable in the portal—could it be missing the required portal configuration?",
+      "answer": "Yes. This issue typically occurs when the form is not properly configured for portal use. The form must be enabled for portal, published or marked as available, and set to allow client submission. If any of these requirements are missing, the system will prevent the form from being assigned."
+    },
+    {
+      "id": "3b5ef26d-1ef1-4af1-a031-caacdbcaa5cb",
+      "intent": "flow",
+      "question": "At what step in the setup workflow must the form be enabled, published, and configured for client submission so it can be assigned to the portal?",
+      "answer": "During the form‑setup workflow, the form must be configured before reaching the assignment step. Specifically, it needs to be enabled for portal, published or available, and set to allow client submission. Once these configuration steps are completed, the form becomes eligible for assignment in the portal."
+    },
+    {
+      "id": "799b1368-c1ef-4630-b31c-934a58e0f8e2",
+      "intent": "information",
+      "question": "What steps are required for staff to assign a form to a client in CareLogic?",
+      "answer": "To assign a form to a client, staff must follow these steps: (1) Search for and select the client. (2) Choose a form that is enabled for portal use. (3) Optionally link the form to the appropriate appointment. (4) Send the assignment so the client receives a notification and completes the form through the portal."
+    },
+    {
+      "id": "e4c785be-7c73-4de3-945b-c453a3df2c2e",
+      "intent": "error",
+      "question": "Why can’t staff assign a form to a client in CareLogic—could a step in the process or configuration be missing?",
+      "answer": "This issue often occurs when one of the required steps or configurations for form assignment is missing. Staff must be able to search and select the client, choose a form that is enabled for the portal, and—if applicable—link it to the correct appointment before sending the assignment. If the form is not enabled for portal use or the workflow is incomplete, the assignment may fail or not appear for the client."
+    },
+    {
+      "id": "7c8e49ab-c936-4e50-8ac5-afba8c9e3df3",
+      "intent": "flow",
+      "question": "How is a form assigned to the client from CareLogic?",
+      "answer": "Recommended flow: (1) Search and select the client, (2) choose the form enabled for portal, (3) link it to the corresponding appointment (recommended), (4) send the assignment. The client will receive the notification and can complete it in the portal."
+    },
+    {
+      "id": "9732515e-90a0-4d56-9784-d5dbeaf4bcab",
+      "intent": "information",
+      "question": "Can the same form be assigned to multiple clients?",
+      "answer": "Yes. You can assign the same form to multiple clients by repeating the assignment flow."
+    },
+    {
+      "id": "6f82ff9c-012f-4b78-93ef-d24104f0a812",
+      "intent": "error",
+      "question": "Why isn’t the form appearing for all clients—does the system prevent assigning the same form to multiple people?",
+      "answer": "No. The system allows assigning the same form to multiple clients. If the form isn't appearing for some clients, it’s usually because a required step in the assignment flow was missed or the form isn’t properly configured for portal use. You can assign the same form repeatedly as long as the form meets the portal requirements."
+    },
+    {
+      "id": "f0e94b22-f09b-42c4-bb73-a28faea84064",
+      "intent": "flow",
+      "question": "What is the workflow for assigning the same form to multiple clients in CareLogic?",
+      "answer": "To assign the same form to multiple clients, simply repeat the standard assignment flow: (1) Select the client. (2) Choose the form. (3) Send the assignment. Repeating this process allows you to assign the same form to as many clients as needed."
+    },
+    {
+      "id": "ba7b4a21-1d9a-4df7-81e8-692ae15a510e",
+      "intent": "information",
+      "question": "Can the client edit the form after submitting it?",
+      "answer": "No. Once submitted, the form becomes a PDF and is no longer editable. If changes are needed, create a new assignment or an additional form."
+    },
+    {
+      "id": "2fbfe362-69e4-4db4-b9b0-d2e15b8bcb1d",
+      "intent": "error",
+      "question": "The client is saying they need to fix information on a form they already submitted—why can’t they edit it after submission?",
+      "answer": "Once a form is submitted, the system converts it into a finalized PDF, which makes it non‑editable. This is expected behavior and not an error. If the client needs to make corrections, staff must create a new assignment or issue an additional form so the client can re‑enter the information."
+    },
+    {
+      "id": "9b65b7ff-4a5f-48f4-b0b8-680cf017b458",
+      "intent": "flow",
+      "question": "What is the process if a client needs to update information after submitting a form?",
+      "answer": "After a form is submitted, it becomes a PDF and cannot be edited. If the client needs to make changes, the workflow is: (1) Staff reviews the submitted PDF. (2) Staff creates a new form assignment or an additional form. (3) The client completes and submits the updated form. This ensures that all edits follow the proper submission flow."
+    },
+    {
+      "id": "0e492d13-5d6d-49ba-85a7-2e2a2a8ce43a",
+      "intent": "information",
+      "question": "Does the client receive notifications when a form is assigned?",
+      "answer": "Yes, if the organization has notifications configured, the client may receive alerts by email and/or SMS. Make sure the email and mobile number in their profile are correct."
+    },
+    {
+      "id": "1fcad455-46be-49da-8185-e758ce71e8ad",
+      "intent": "error",
+      "question": "The client is not receiving any notifications when forms are assigned—could there be an issue with their contact information or notification settings?",
+      "answer": "Yes. If the client is not receiving notifications, it’s usually due to missing or incorrect information. Verify that the organization has notifications enabled and that the client's email and mobile number are correctly entered in their profile. If either field is incorrect or blank, the system cannot send email or SMS alerts."
+    },
+    {
+      "id": "883b63fe-bc67-4d7f-ab86-aa3a9ecf4e56",
+      "intent": "flow",
+      "question": "What steps need to be followed to ensure the client receives notifications when a form is assigned?",
+      "answer": "To ensure the client receives form‑assignment notifications, follow this workflow: (1) Confirm that the organization has portal notifications enabled. (2) Check that the client’s profile has a valid email and/or mobile number. (3) Assign the form through the portal workflow. (4) Once assigned, the system sends the notification to the email or phone number on file. This flow ensures clients receive alerts through email and/or SMS as configured."
+    },
+    {
+      "id": "d5ecbd49-3a07-4a78-abcb-d6202c9cea58",
+      "intent": "information",
+      "question": "What happens when the client submits the form?",
+      "answer": "The system generates a PDF and syncs it to the client’s record in CareLogic (Document Library). Authorized staff can access the document almost in real time."
+    },
+    {
+      "id": "31ac6af3-1e2d-44d4-8920-312add4a29fc",
+      "intent": "error",
+      "question": "After the client submits the form, why isn’t it appearing in their CareLogic record?",
+      "answer": "This issue can occur if there are delays in syncing or if attachment size limits are exceeded. Normally, the PDF should appear almost immediately in the client’s Document Library. If it doesn’t show up after a few minutes, check for size limit issues or escalate to support with relevant details."
+    },
+    {
+      "id": "7f1d08e0-247e-4b8c-a81e-3640c48e3649",
+      "intent": "flow",
+      "question": "What is the process after a client submits a form through the portal?",
+      "answer": "Once the client submits the form, the system generates a PDF version of the completed form. This PDF is then synced to the client’s record in CareLogic, specifically in their Document Library. Authorized staff can access and review the document shortly after submission."
+    },
+    {
+      "id": "9c6c554e-51a7-4413-a02d-9db919964b86",
+      "intent": "information",
+      "question": "How long does it take for the form to sync with CareLogic?",
+      "answer": "It is normally almost immediate. If it does not appear after a few minutes, check attachment size limits."
+    },
+    {
+      "id": "e2282cc4-9f1b-4a78-b332-695c0cbf59c7",
+      "intent": "error",
+      "question": "The form submitted by the client is not appearing in CareLogic—how long should it take to sync, and what should I check?",
+      "answer": "The sync is usually almost immediate. If the form does not appear after a few minutes, verify that the attachment size does not exceed allowed limits. If size is not an issue, escalate to support with relevant details."
+    },
+    {
+      "id": "22d9f00d-e5d1-4a07-9a73-cb58f9d4ee63",
+      "intent": "flow",
+      "question": "What is the expected timeline for a form to sync with CareLogic after submission?",
+      "answer": "After the client submits the form, it typically syncs with CareLogic almost immediately. If it does not appear in the Document Library within a few minutes, check for potential issues such as attachment size limits before escalating."
+    },
+    {
+      "id": "1b5fae44-ec20-4131-9ab8-e6adcbd5fbaf",
+      "intent": "information",
+      "question": "In what format is the submitted form saved?",
+      "answer": "It is saved as a PDF. The PDF reflects the form responses and is available for download and audit."
+    },
+    {
+      "id": "b3946c7f-1aa2-4e5f-842f-64cbab7ae57d",
+      "intent": "error",
+      "question": "The submitted form is not in the expected format—what format should I expect it to be saved as?",
+      "answer": "Submitted forms are saved as PDFs. If the form is not appearing in this format, there may be an issue with the submission or sync process. Normally, the PDF should reflect the client’s responses and be available for download and audit."
+    },
+    {
+      "id": "e72a3054-1c54-4d6c-bda7-c128cd7abd2a",
+      "intent": "flow",
+      "question": "What is the format of the form after the client submits it through the portal?",
+      "answer": "After submission, the form is converted into a PDF format. This PDF captures all of the client’s responses and is stored in their Document Library within CareLogic for easy access and auditing."
+    },
+    {
+      "id": "989a73cd-e71d-431e-8dc4-76ebc6c9898c",
+      "intent": "error",
+      "question": "The client submitted the form but it does not appear in the Document Library. What should I do?",
+      "answer": "Verify: (1) that attachments do not exceed the allowed limit, and (2) the permissions of the user checking. If everything is correct and it still does not appear, escalate to support with date, time, client, and form."
+    },
+    {
+      "id": "0dbf81ae-4395-43d9-becf-42745b70b6ef",
+      "intent": "flow",
+      "question": "What steps should I follow if a submitted form is not appearing in the Document Library?",
+      "answer": "If a submitted form is missing from the Document Library, follow these steps: (1) Check that the attachment size does not exceed allowed limits. (2) Verify that the user checking has the necessary permissions to view the document. If all checks are correct and the form still does not appear, escalate to support with relevant details such as date, time, client, and form information."
+    },
+    {
+      "id": "3e68d8fc-47af-4648-a635-b182e66c7ffa",
+      "intent": "information",
+      "question": "Where is the completed form stored in CareLogic?",
+      "answer": "In the client's Document Library. From there, authorized staff can view, download, or review the document."
+    },
+    {
+      "id": "b5e55848-862c-43ec-a935-6427351be030",
+      "intent": "error",
+      "question": "I can’t find the completed form in CareLogic—where should I look for it?",
+      "answer": "Completed forms are stored in the client’s Document Library. If you can’t find it there, ensure you have the necessary permissions to view the document. If it still doesn’t appear, check for sync issues or escalate to support."
+    },
+    {
+      "id": "8119f838-d72c-4684-8927-fbdbe8c63f6e",
+      "intent": "flow",
+      "question": "What is the process for locating a completed form in CareLogic after submission?",
+      "answer": "After a client submits a form, it is stored in their Document Library within CareLogic. Authorized staff can access this library to view, download, or review the completed document."
+    },
+    {
+      "id": "45914c11-2025-4d86-9d0a-1605a6bd6952",
+      "intent": "information",
+      "question": "Who can see the forms submitted by the client?",
+      "answer": "Any user with permissions to view the client’s Document Library and associated clinical documents. Visibility depends on your organization's roles/permissions."
+    },
+    {
+      "id": "ed5afda1-94fd-4ae3-9449-31840e50d6da",
+      "intent": "error",
+      "question": "I can’t see the forms submitted by the client—who is allowed to view them?",
+      "answer": "Forms submitted by the client are visible to users with permissions to access the client’s Document Library and clinical documents. If you can’t see them, check your permissions or roles within the organization."
+    },
+    {
+      "id": "a4e4c61c-92b5-4f7f-be42-e8f0602b38de",
+      "intent": "flow",
+      "question": "What is the process for determining who can view forms submitted by the client?",
+      "answer": "To determine who can view submitted forms, check the user’s permissions related to the client’s Document Library and clinical documents. Access is governed by your organization’s roles and permissions settings."
+    },
+    {
+      "id": "75384e3e-fa38-4c26-8e8a-9d5d08660be9",
+      "intent": "information",
+      "question": "Can an assigned form be canceled?",
+      "answer": "Yes. You can unassign the pending form. The client will no longer be able to complete it. If you need to replace it, create a new assignment with the correct form."
+    },
+    {
+      "id": "c9f01955-9bf7-4a1e-a1bc-e310cf9867d3",
+      "intent": "error",
+      "question": "I need to cancel an assigned form for a client—how can I do this?",
+      "answer": "You can unassign the pending form from the client. This action prevents the client from completing it. If you need to provide a different form, create a new assignment with the correct form."
+    },
+    {
+      "id": "e3cd0e6b-72b7-402c-9e52-61af0a6fc8ef",
+      "intent": "flow",
+      "question": "What is the process for canceling an assigned form for a client?",
+      "answer": "To cancel an assigned form, follow these steps: (1) Locate the pending form assignment in the system. (2) Unassign the form from the client, which prevents them from completing it. (3) If necessary, create a new assignment with the correct form to replace the canceled one."
+    },
+    {
+      "id": "63e4c4ff-9b1b-4cd2-b7cf-b5bcd0e023c1",
+      "intent": "information",
+      "question": "Can a form that has already been submitted by the client be reopened?",
+      "answer": "No. Once submitted, it becomes a non-editable PDF. If new information is needed, create a new assignment or a complementary form."
+    },
+    {
+      "id": "46ba4ab0-34eb-48e8-9c82-ffbc92a9d98e",
+      "intent": "error",
+      "question": "The client submitted a form but needs to make changes—can the submitted form be reopened for editing?",
+      "answer": "No. Once a form is submitted, it is converted into a finalized PDF and cannot be edited. If the client needs to provide new or updated information, staff must create a new assignment or issue a complementary form for the client to complete."
+    },
+    {
+      "id": "134f726c-dcdb-40d0-b7b9-0dac920ba7c1",
+      "intent": "flow",
+      "question": "What is the process if a client needs to provide additional information after submitting a form?",
+      "answer": "After submission, the form becomes a non-editable PDF. If additional information is required, the workflow is: (1) Staff reviews the submitted PDF. (2) Staff creates a new form assignment or complementary form. (3) The client completes and submits the new form. This ensures that any additional information follows the proper submission process."
+    },
+    {
+      "id": "4d8c0c33-7f3d-4bb0-9e0f-9d1c0dbdc893",
+      "intent": "error",
+      "question": "I cannot assign the form, what should I check?",
+      "answer": "Check: (1) your assignment permissions, (2) that the form is enabled for the portal, (3) that the client has an active portal and valid email, and (4) possible restrictions in your environment."
+    },
+    {
+      "id": "91c5e4c2-8b8c-4b7c-9c71-1af7ef2edc1c",
+      "intent": "flow",
+      "question": "What steps should I follow if I cannot assign a form to a client?",
+      "answer": "If you cannot assign a form, follow these steps: (1) Verify that you have the necessary permissions to assign forms. (2) Ensure that the form is properly enabled for portal use. (3) Confirm that the client has an active portal account and a valid email address in their profile. (4) Check for any restrictions or configurations in your environment that may prevent assignment."
+    },
+    {
+      "id": "e4c37f6b-d0fb-4dbb-9f3b-e4f5de8f5130",
+      "intent": "information",
+      "question": "How do I know if the client has submitted the form?",
+      "answer": "Check the status of the form: when it changes to 'Completed', the PDF should be in the Document Library. You can also review internal alerts or notifications if they are enabled."
+    },
+    {
+      "id": "7f889b8f-bf34-4a8a-bc85-3cbef8448348",
+      "intent": "error",
+      "question": "I’m not sure if the client has submitted the form—how can I verify this?",
+      "answer": "To verify if the client has submitted the form, check the status of the assignment. If it shows as 'Completed', the PDF should be available in the Document Library. Additionally, if your organization has internal alerts or notifications enabled, you can review those for submission confirmations."
+    },
+    {
+      "id": "1f77b1cf-7c84-4f72-9b3c-2e915f7a1bd4",
+      "intent": "flow",
+      "question": "What is the process for checking if a client has submitted a form?",
+      "answer": "To check if a client has submitted a form, follow these steps: (1) Review the status of the form assignment; a status of 'Completed' indicates submission. (2) Access the client’s Document Library to locate the submitted PDF. (3) If applicable, check any internal alerts or notifications that may confirm submission."
+    },
+    {
+      "id": "f0b62e6e-82d5-46a8-88fd-3a0edc8f1e7b",
+      "intent": "information",
+      "question": "Does Portal Form Assignment meet security and audit requirements?",
+      "answer": "Yes. Assignments, submissions, and access are logged for auditing according to your organization's configuration. Make sure to apply minimum necessary roles and permissions."
+    }
 ]
