@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.env
+.venv/
+venv/
+.env.*
+*.sqlite3
+
+# FastAPI / Uvicorn
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Artifacts / modelos / índices
+app/artifacts/
+**/artifacts/
+*.pkl
+
+# Datos locales (especialmente sensibles)
+app/data/*.csv
+app/data/*.xlsx
+app/data/*.parquet
+
+# Si tienes datos de ejemplo, mantén solo los que sean sintéticos
+# y explícitamente permitidos:
+# !app/data/faq.json
+# !app/data/intents.json

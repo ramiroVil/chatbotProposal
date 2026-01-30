@@ -1,0 +1,74 @@
+[
+  {
+    "id": "err_patient_data_001",
+    "intent": "error",
+    "question": "No puedo crear el documento porque el paciente no tiene número de teléfono",
+    "answer": "La creación del documento requiere datos completos del paciente. Ingresa al perfil del paciente y actualiza su número de teléfono para continuar."
+  },
+  {
+    "id": "err_patient_data_002",
+    "intent": "error",
+    "question": "Me aparece error porque el correo del paciente está vacío",
+    "answer": "El correo es obligatorio para este tipo de documento. Actualiza el correo desde la ficha del paciente e intenta nuevamente."
+  },
+  {
+    "id": "err_missing_org_001",
+    "intent": "error",
+    "question": "No puedo avanzar porque no seleccioné la organización",
+    "answer": "Primero debes seleccionar la organización. Luego el programa asociado y finalmente el tipo de documento. Sigue el orden del flujo."
+  },
+  {
+    "id": "err_missing_program_001",
+    "intent": "error",
+    "question": "Sale error porque no he elegido un programa",
+    "answer": "Después de elegir la organización debes seleccionar el programa correspondiente. Esto habilita los documentos disponibles."
+  },
+  {
+    "id": "err_doc_type_001",
+    "intent": "error",
+    "question": "El sistema dice que el tipo de documento no es válido",
+    "answer": "Verifica que el documento esté disponible para la organización y programa seleccionados. Si persiste, contacta al equipo funcional."
+  },
+  {
+    "id": "err_validation_001",
+    "intent": "error",
+    "question": "Me marca error de validación antes de generar el documento",
+    "answer": "Revisa los campos obligatorios en pantalla. Cualquier dato faltante del paciente o del flujo debe completarse para continuar."
+  },
+  {
+    "id": "flow_steps_001",
+    "intent": "flujo",
+    "question": "Cuál es el flujo correcto para crear un documento",
+    "answer": "El flujo es: 1) Seleccionar organización, 2) Seleccionar programa, 3) Elegir tipo de documento, 4) Validar datos del paciente, 5) Crear documento."
+  },
+  {
+    "id": "flow_help_001",
+    "intent": "flujo",
+    "question": "No conozco el flujo de creación de documentos, ¿qué hago?",
+    "answer": "Ingresa primero a la organización, selecciona el programa y luego el documento. Si necesitas más detalle consulta la guía interna /Flows/Document-Creation."
+  },
+  {
+    "id": "flow_patient_validation_001",
+    "intent": "flujo",
+    "question": "Qué datos del paciente se necesitan para crear un documento",
+    "answer": "Debes tener configurados: nombre completo, documento de identidad, correo y número de teléfono. Todos deben estar completos para generar documentos."
+  },
+  {
+    "id": "flow_precheck_001",
+    "intent": "flujo",
+    "question": "Cómo verifico si el paciente tiene los datos completos",
+    "answer": "Ve al perfil del paciente y revisa los campos marcados como obligatorios. Si falta algo, complétalo antes de iniciar el flujo."
+  },
+  {
+    "id": "flow_org_program_relation_001",
+    "intent": "flujo",
+    "question": "Por qué tengo que seleccionar organización antes que programa",
+    "answer": "Los programas dependen de la organización. Al seleccionar la organización se habilitan los programas asociados, y luego los documentos permitidos."
+  },
+  {
+    "id": "flow_doc_selection_001",
+    "intent": "flujo",
+    "question": "Dónde elijo el tipo de documento a generar",
+    "answer": "Una vez seleccionados la organización y el programa, se habilita el listado de documentos disponibles. Selecciona uno para continuar."
+  }
+]

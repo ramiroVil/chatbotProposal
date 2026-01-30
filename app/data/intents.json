@@ -1,0 +1,19 @@
+[
+  { "text": "No puedo crear el documento porque el paciente no tiene teléfono", "intent": "error" },
+  { "text": "Me sale error porque falta el correo del paciente", "intent": "error" },
+  { "text": "No puedo avanzar sin seleccionar la organización", "intent": "error" },
+  { "text": "Me bloquea porque no escogí el programa", "intent": "error" },
+  { "text": "Dice que el tipo de documento no es válido", "intent": "error" },
+  { "text": "Error de validación antes de generar el documento", "intent": "error" },
+  { "text": "El paciente tiene datos incompletos y no puedo crear el archivo", "intent": "error" },
+  { "text": "No me deja crear porque faltan campos obligatorios", "intent": "error" },
+
+  { "text": "Cuál es el flujo para crear un documento", "intent": "flujo" },
+  { "text": "Cómo funciona el proceso de creación de documentos", "intent": "flujo" },
+  { "text": "Ayuda, no entiendo el flujo para generar documentos", "intent": "flujo" },
+  { "text": "Qué pasos debo seguir para crear un documento", "intent": "flujo" },
+  { "text": "Qué datos del paciente necesito para el flujo", "intent": "flujo" },
+  { "text": "Por qué tengo que seleccionar organización y luego programa", "intent": "flujo" },
+  { "text": "Dónde se elige el tipo de documento", "intent": "flujo" },
+  { "text": "Qué hago si quiero saber los pasos del proceso", "intent": "flujo" }
+]
