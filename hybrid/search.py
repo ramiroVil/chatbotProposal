@@ -81,7 +81,3 @@ def search_hybrid(user_text: str, language: str = "es"):
             "final_score": float(r[8]),
         })
     return results
-
-if __name__ == "__main__":
-    result = search_hybrid("¿por qué no se guarda mi formulario del portal?", language="es")
-    print(result)

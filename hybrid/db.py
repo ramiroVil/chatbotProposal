@@ -3,7 +3,7 @@ import uuid
 import psycopg
 from pgvector.psycopg import register_vector
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://root:Admin456@localhost:5432/db_012825_v2")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://root:Admin456@localhost:5432/db_013025")
 
 def get_conn():
     conn = psycopg.connect(DATABASE_URL)

@@ -1,25 +1,14 @@
 from db import get_conn, new_uuid
 from embeddings import embed
+import os
+import json
 
-SAMPLE_FAQS = [
-  {
-    "question": "No se guarda el Portal Form Assignment",
-    "answer": "Verifica permisos del usuario, revisa validaciones requeridas y confirma que el servicio X esté activo. Si persiste, revisa logs del módulo Y.",
-    "category": "Portal",
-    "tags": ["portal", "form", "save", "assignment"],
-    "language": "es",
-    "source_link": "https://tu-doc-interna/portal/save"
-  },
-  {
-    "question": "Error E1234 al asignar un formulario",
-    "answer": "El error E1234 suele ocurrir por configuración inválida. Valida el campo Z y reinicia el servicio X. Si hay cola, limpia caché Y.",
-    "category": "Errores",
-    "tags": ["E1234", "assignment", "config"],
-    "language": "es",
-    "source_link": "https://tu-doc-interna/errors/e1234"
-  },
-]
+DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+path = os.path.join(DATA_DIR, "questions.json")
+with open(path, "r", encoding="utf-8") as f:
+        SAMPLE_FAQS = json.load(f)
 
+print(f"SAMPLE_FAQS path: {SAMPLE_FAQS}")
 def upsert_faq(conn, faq):
     q = """
     INSERT INTO faq_items (id, question, answer, category, tags, language, source_link, embedding)

@@ -1,0 +1,459 @@
+[
+    {
+      "question": "Why doesn't the form appear in the Portal Form Assignment list when I try to send it to a client?",
+      "answer": "Forms without a PortalId do not appear in the Portal Form Assignment list. To make the form visible, you must enable 'Include in Client Portal?' and assign a valid 'Client Portal Form ID' in the document instance.",
+      "category": "error",
+      "tags": [
+        "portal",
+        "form",
+        "assignment",
+        "client",
+        "list",
+        "doesnt",
+        "appear",
+        "try"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "What does the 'Include in Client Portal?' setting do for a provider?",
+      "answer": "The 'Include in Client Portal?' setting determines whether the document instance is eligible to be shown in the client portal. When enabled, it unlocks the 'Client Portal Form ID' field required to register the form with the portal.",
+      "category": "information",
+      "tags": [
+        "portal",
+        "client",
+        "include",
+        "setting",
+        "provider"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Why is the 'Client Portal Form ID' needed?",
+      "answer": "The 'Client Portal Form ID' is necessary to link the document instance to the client portal. Without this PortalId, the system cannot render or display the form for assignment.",
+      "category": "information",
+      "tags": [
+        "portal",
+        "form",
+        "client",
+        "id",
+        "needed"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "How do I configure a form so I can assign it to a client via the portal?",
+      "answer": "Follow these steps: (1) Create the document instance in Service Document, (2) enable 'Include in Client Portal?' = Yes, (3) add a value in 'Client Portal Form ID', and (4) save the document instance. The form will then appear in Portal Form Assignment.",
+      "category": "flow",
+      "tags": [
+        "portal",
+        "form",
+        "client",
+        "configure",
+        "so",
+        "assign"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "What steps should I follow to make a new form available for client portal assignment?",
+      "answer": "You must create the form in Service Document, activate 'Include in Client Portal?', provide a PortalId in 'Client Portal Form ID', and save the instance. Once saved, the form will be available to assign from the Portal Form Assignment screen.",
+      "category": "flow",
+      "tags": [
+        "portal",
+        "form",
+        "assignment",
+        "client",
+        "step",
+        "follow",
+        "make",
+        "new"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "How do I unlock the 'Client Portal Form ID' field when configuring a document?",
+      "answer": "'Client Portal Form ID' becomes available only after setting 'Include in Client Portal?' to Yes. Once enabled, the field becomes editable and you can assign the PortalId.",
+      "category": "flow",
+      "tags": [
+        "portal",
+        "form",
+        "client",
+        "id",
+        "document",
+        "unlock",
+        "field",
+        "configuring"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Why is the 'Client Portal Form ID' still disabled even after I created the document?",
+      "answer": "The field remains locked until you set 'Include in Client Portal?' to Yes. Open the document instance, enable the option, and the PortalId field will become editable.",
+      "category": "error",
+      "tags": [
+        "portal",
+        "form",
+        "client",
+        "id",
+        "document",
+        "disabled",
+        "even",
+        "created"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "I configured the form but it still doesn't appear in the list. What could be wrong?",
+      "answer": "The form will not appear unless the document instance was saved after configuring the PortalId. Open the instance, verify the PortalId, and save it again.",
+      "category": "error",
+      "tags": [
+        "form",
+        "list",
+        "configured",
+        "but",
+        "doesnt",
+        "appear",
+        "wrong"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "The client cannot access the form I assigned. Why could this happen?",
+      "answer": "The client will not see the assigned form if the PortalId was missing, incorrectly configured, or the document instance was not saved after setting the portal options.",
+      "category": "error",
+      "tags": [
+        "form",
+        "client",
+        "acces",
+        "assigned",
+        "happen"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "I assigned a form but the portal shows nothing. Did I miss something?",
+      "answer": "This usually happens when the document instance was not properly configured with 'Include in Client Portal?' and a valid 'Client Portal Form ID'. Verify both fields and save the document again.",
+      "category": "error",
+      "tags": [
+        "portal",
+        "form",
+        "assigned",
+        "but",
+        "show",
+        "nothing",
+        "mis",
+        "something"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "What requirements must a client meet to receive forms through the portal?",
+      "answer": "The client must: (1) have an active portal account, (2) have a valid email address registered in their profile, and (3) be able to authenticate in the portal (web or mobile). Without these requirements, the client will not see or be able to complete assigned forms.",
+      "category": "information",
+      "tags": [
+        "portal",
+        "form",
+        "client",
+        "requirement",
+        "meet",
+        "receive"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Does the client need to have an active portal account to receive forms?",
+      "answer": "Yes. Portal activation is required for the client to receive and complete assigned forms. If the account is not active, the client will not see the forms.",
+      "category": "information",
+      "tags": [
+        "portal",
+        "form",
+        "client",
+        "have",
+        "active",
+        "account",
+        "receive"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Is it mandatory for the client to have a registered email to use Portal Form Assignment?",
+      "answer": "Yes. The email is needed for portal activation and form notifications. Make sure the registered email matches the one the client uses to log in.",
+      "category": "information",
+      "tags": [
+        "portal",
+        "form",
+        "assignment",
+        "client",
+        "email",
+        "mandatory",
+        "have",
+        "registered"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "What permissions does the staff need to assign portal forms?",
+      "answer": "Staff must have permissions to: (1) view the client, (2) access the forms module, (3) assign portal forms, and if applicable, (4) link forms to appointments. Without these permissions, assignment may fail or be unavailable.",
+      "category": "information",
+      "tags": [
+        "portal",
+        "form",
+        "permission",
+        "staff",
+        "assign"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "What requirements must a form meet to be assigned to the portal?",
+      "answer": "The form must be enabled for portal, published/available, and allow client submission. If a form is not configured for portal, it cannot be assigned.",
+      "category": "information",
+      "tags": [
+        "portal",
+        "form",
+        "requirement",
+        "meet",
+        "assigned"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "How is a form assigned to the client from CareLogic?",
+      "answer": "Recommended flow: (1) Search and select the client, (2) choose the form enabled for portal, (3) link it to the corresponding appointment (recommended), (4) send the assignment. The client will receive the notification and can complete it in the portal.",
+      "category": "flow",
+      "tags": [
+        "form",
+        "client",
+        "carelogic",
+        "assigned"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Can the same form be assigned to multiple clients?",
+      "answer": "Yes. You can assign the same form to multiple clients by repeating the assignment flow.",
+      "category": "information",
+      "tags": [
+        "form",
+        "client",
+        "same",
+        "assigned",
+        "multiple"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Can the client edit the form after submitting it?",
+      "answer": "No. Once submitted, the form becomes a PDF and is no longer editable. If changes are needed, create a new assignment or an additional form.",
+      "category": "information",
+      "tags": [
+        "form",
+        "client",
+        "edit",
+        "submitting"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Does the client receive notifications when a form is assigned?",
+      "answer": "Yes, if the organization has notifications configured, the client may receive alerts by email and/or SMS. Make sure the email and mobile number in their profile are correct.",
+      "category": "information",
+      "tags": [
+        "form",
+        "client",
+        "notification",
+        "receive",
+        "assigned"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "What happens when the client submits the form?",
+      "answer": "The system generates a PDF and syncs it to the client’s record in CareLogic (Document Library). Authorized staff can access the document almost in real time.",
+      "category": "information",
+      "tags": [
+        "form",
+        "client",
+        "submit",
+        "happen"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "How long does it take for the form to sync with CareLogic?",
+      "answer": "It is normally almost immediate. If it does not appear after a few minutes, check attachment size limits.",
+      "category": "flow",
+      "tags": [
+        "form",
+        "sync",
+        "carelogic",
+        "long",
+        "take"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "In what format is the submitted form saved?",
+      "answer": "It is saved as a PDF. The PDF reflects the form responses and is available for download and audit.",
+      "category": "information",
+      "tags": [
+        "form",
+        "format",
+        "submitted",
+        "saved"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "The client submitted the form but it does not appear in the Document Library. What should I do?",
+      "answer": "Verify: (1) that the form is linked to an appointment, (2) that attachments do not exceed the allowed limit, and (3) the permissions of the user checking. If everything is correct and it still does not appear, escalate to support with date, time, client, and form.",
+      "category": "error",
+      "tags": [
+        "form",
+        "client",
+        "document",
+        "library",
+        "submitted",
+        "but",
+        "not",
+        "appear"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Where is the completed form stored in CareLogic?",
+      "answer": "In the client's Document Library. From there, authorized staff can view, download, or review the document.",
+      "category": "information",
+      "tags": [
+        "form",
+        "carelogic",
+        "where",
+        "completed",
+        "stored"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Who can see the forms submitted by the client?",
+      "answer": "Any user with permissions to view the client’s Document Library and associated clinical documents. Visibility depends on your organization's roles/permissions.",
+      "category": "information",
+      "tags": [
+        "form",
+        "client",
+        "who",
+        "see",
+        "submitted"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Can an assigned form be canceled?",
+      "answer": "Yes. You can unassign the pending form. The client will no longer be able to complete it. If you need to replace it, create a new assignment with the correct form.",
+      "category": "information",
+      "tags": [
+        "form",
+        "assigned",
+        "canceled"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Can a form that has already been submitted by the client be reopened?",
+      "answer": "No. Once submitted, it becomes a non-editable PDF. If new information is needed, create a new assignment or a complementary form.",
+      "category": "information",
+      "tags": [
+        "form",
+        "client",
+        "has",
+        "already",
+        "submitted",
+        "reopened"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "The client does not see the assigned form; how do I fix it?",
+      "answer": "Check: (1) active portal, (2) email matches the login email, (3) form enabled for portal and assigned correctly. If everything is correct, wait a few minutes and retry; if the issue persists, escalate.",
+      "category": "error",
+      "tags": [
+        "form",
+        "client",
+        "not",
+        "see",
+        "assigned",
+        "fix"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "I cannot assign the form, what should I check?",
+      "answer": "Check: (1) your assignment permissions, (2) that the form is enabled for the portal, (3) that the client has an active portal and valid email, and (4) possible restrictions in your environment.",
+      "category": "error",
+      "tags": [
+        "form",
+        "assign",
+        "check"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "How do I know if the client has submitted the form?",
+      "answer": "Check the status of the form: when it changes to 'Completed', the PDF should be in the Document Library. You can also review internal alerts or notifications if they are enabled.",
+      "category": "flow",
+      "tags": [
+        "form",
+        "client",
+        "know",
+        "has",
+        "submitted"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Does Portal Form Assignment meet security and audit requirements?",
+      "answer": "Yes. Assignments, submissions, and access are logged for auditing according to your organization's configuration. Make sure to apply minimum necessary roles and permissions.",
+      "category": "information",
+      "tags": [
+        "portal",
+        "form",
+        "assignment",
+        "meet",
+        "security",
+        "audit",
+        "requirement"
+      ],
+      "language": "en",
+      "source_link": ""
+    }
+  ]
