@@ -1,158 +1,231 @@
 [
     {
-      "question": "Why doesn't the form appear in the Portal Form Assignment list when I try to send it to a client?",
-      "answer": "Forms without a PortalId do not appear in the Portal Form Assignment list. To make the form visible, you must enable 'Include in Client Portal?' and assign a valid 'Client Portal Form ID' in the document instance.",
-      "category": "error",
-      "tags": [
-        "portal",
-        "form",
-        "assignment",
-        "client",
-        "list",
-        "doesnt",
-        "appear",
-        "try"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "What does the 'Include in Client Portal?' setting do for a provider?",
-      "answer": "The 'Include in Client Portal?' setting determines whether the document instance is eligible to be shown in the client portal. When enabled, it unlocks the 'Client Portal Form ID' field required to register the form with the portal.",
-      "category": "information",
-      "tags": [
-        "portal",
-        "client",
-        "include",
-        "setting",
-        "provider"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Why is the 'Client Portal Form ID' needed?",
-      "answer": "The 'Client Portal Form ID' is necessary to link the document instance to the client portal. Without this PortalId, the system cannot render or display the form for assignment.",
+      "question": "Why doesn’t the Program appear in the Portal Form Assignment dropdown for this client?",
+      "answer": "The client likely does not have an active Program in Program History under your current login Organization. Go to the client’s ECR → Program History → Add a new program history → select the same Organization you are logged into (e.g., Default Oak Organization) → choose the Program → submit.",
       "category": "information",
       "tags": [
         "portal",
         "form",
+        "assignment",
+        "program",
         "client",
-        "id",
-        "needed"
+        "dropdown"
       ],
       "language": "en",
       "source_link": ""
     },
     {
-      "question": "How do I configure a form so I can assign it to a client via the portal?",
-      "answer": "Follow these steps: (1) Create the document instance in Service Document, (2) enable 'Include in Client Portal?' = Yes, (3) add a value in 'Client Portal Form ID', and (4) save the document instance. The form will then appear in Portal Form Assignment.",
+      "question": "I clicked “Assign a Form” but the Program list is empty. What’s wrong?",
+      "answer": "The Program list will be empty if the client has no Program enrolled in Program History. Add a new Program History entry with the correct Organization and Program, then submit and refresh the assignment screen.",
+      "category": "error",
+      "tags": [
+        "form",
+        "program",
+        "list"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "The Program exists in the system but I still cannot select it—could this be an Organization mismatch?",
+      "answer": "Yes. If the Program History entry is saved under a different Organization than the one you are logged into, it will not appear. Re-add the Program under your current login Organization and submit.",
+      "category": "error",
+      "tags": [
+        "program",
+        "organization"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "I added Program History but the Program still doesn’t show. Did I miss a required field?",
+      "answer": "Ensure you completed the minimum required fields—Begin Date/Time, Organization, and Program—and clicked Submit. After submitting, return to Portal Form Assignment and refresh.",
+      "category": "error",
+      "tags": [
+        "program",
+        "history"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Could invalid dates prevent the Program from appearing in assignments?",
+      "answer": "Yes. A future Begin Date/Time or conflicting discharge settings can hide the Program from current assignment flows. Use a valid current Begin Date/Time and submit.",
+      "category": "error",
+      "tags": [
+        "program"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "I see a message saying only programs the client is not currently active in are listed. Why?",
+      "answer": "The system filters based on Program activity and dates. Verify the client’s Program History status and date ranges, then adjust if necessary.",
+      "category": "error",
+      "tags": [
+        "client"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Do I need special permissions to see the Program after adding it?",
+      "answer": "You must have access to the Organization and Program. Confirm your login Organization matches the Organization used in Program History and that your role permits assignments.",
+      "category": "information",
+      "tags": [
+        "program"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "How do I add a Program so it becomes selectable when assigning portal forms?",
+      "answer": "Open the client ECR → Program History → Add a new program history → choose the same Organization as your login (e.g., Default Oak Organization) → select the Program → fill the minimum required fields → Submit → return to Portal Form Assignment and refresh.",
       "category": "flow",
       "tags": [
         "portal",
-        "form",
-        "client",
-        "configure",
-        "so",
-        "assign"
+        "program"
       ],
       "language": "en",
       "source_link": ""
     },
     {
-      "question": "What steps should I follow to make a new form available for client portal assignment?",
-      "answer": "You must create the form in Service Document, activate 'Include in Client Portal?', provide a PortalId in 'Client Portal Form ID', and save the instance. Once saved, the form will be available to assign from the Portal Form Assignment screen.",
+      "question": "What are the minimum fields I must fill in Program History for portal assignments?",
+      "answer": "Complete Begin Date/Time, Organization, and Program. Then click Submit. Optional fields are not required unless your policy demands them.",
+      "category": "information",
+      "tags": [
+        "portal",
+        "program",
+        "history"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "How do I ensure I’m using the correct Organization when adding the Program?",
+      "answer": "Match the Organization on the Program History entry to the Organization shown in your login header. If needed, switch your login Organization or re-add the Program under the correct one.",
       "category": "flow",
+      "tags": [
+        "program",
+        "organization"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "What should I do immediately after submitting the new Program History entry?",
+      "answer": "Return to the Portal Form Assignment screen, click Assign a Form, and select the Program. If you don’t see it, refresh the page and try again.",
+      "category": "error",
+      "tags": [
+        "program",
+        "history"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "How can I quickly make a Program selectable for a new assignment?",
+      "answer": "Add a Program History entry using only the required fields (Begin Date/Time, Organization, Program), submit, then refresh the assignment screen.",
+      "category": "flow",
+      "tags": [
+        "assignment",
+        "program"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "How do I fix a Program saved under the wrong Organization?",
+      "answer": "Add a new Program History entry under the correct Organization that matches your login. Ensure dates are valid, submit, and then use the Program in Portal Form Assignment.",
+      "category": "error",
+      "tags": [
+        "program",
+        "organization"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Why does Program History affect the Program dropdown in Portal Form Assignment?",
+      "answer": "Portal Form Assignment filters available Programs by the client’s active Program History and the staff’s login Organization. Without a matching Program History entry, the Program won’t appear.",
+      "category": "information",
       "tags": [
         "portal",
         "form",
         "assignment",
-        "client",
-        "step",
-        "follow",
-        "make",
-        "new"
+        "program",
+        "history",
+        "dropdown"
       ],
       "language": "en",
       "source_link": ""
     },
     {
-      "question": "How do I unlock the 'Client Portal Form ID' field when configuring a document?",
-      "answer": "'Client Portal Form ID' becomes available only after setting 'Include in Client Portal?' to Yes. Once enabled, the field becomes editable and you can assign the PortalId.",
+      "question": "How does the staff login Organization influence Program visibility?",
+      "answer": "Programs are Organization-scoped. The Program must be recorded in Program History under the same Organization you are logged into for it to appear in the assignment dropdown.",
       "category": "flow",
       "tags": [
-        "portal",
-        "form",
-        "client",
-        "id",
-        "document",
-        "unlock",
-        "field",
-        "configuring"
+        "program",
+        "organization"
       ],
       "language": "en",
       "source_link": ""
     },
     {
-      "question": "Why is the 'Client Portal Form ID' still disabled even after I created the document?",
-      "answer": "The field remains locked until you set 'Include in Client Portal?' to Yes. Open the document instance, enable the option, and the PortalId field will become editable.",
-      "category": "error",
+      "question": "What happens if the Program has a future Begin Date in Program History?",
+      "answer": "The Program may not be immediately available for assignments until the Begin Date/Time is reached. Use a current Begin Date/Time if you need to assign forms now.",
+      "category": "information",
       "tags": [
-        "portal",
-        "form",
-        "client",
-        "id",
-        "document",
-        "disabled",
-        "even",
-        "created"
+        "program",
+        "history",
+        "begin",
+        "date"
       ],
       "language": "en",
       "source_link": ""
     },
     {
-      "question": "I configured the form but it still doesn't appear in the list. What could be wrong?",
-      "answer": "The form will not appear unless the document instance was saved after configuring the PortalId. Open the instance, verify the PortalId, and save it again.",
-      "category": "error",
+      "question": "Do I need to mark the Program as Primary for it to show up?",
+      "answer": "Not necessarily. Visibility usually depends on having a valid Program History entry with required fields and correct Organization. Mark Primary only if your policy requires it.",
+      "category": "information",
       "tags": [
-        "form",
-        "list",
-        "configured",
-        "but",
-        "doesnt",
-        "appear",
-        "wrong"
+        "program",
+        "primary"
       ],
       "language": "en",
       "source_link": ""
     },
     {
-      "question": "The client cannot access the form I assigned. Why could this happen?",
-      "answer": "The client will not see the assigned form if the PortalId was missing, incorrectly configured, or the document instance was not saved after setting the portal options.",
+      "question": "I submitted Program History, but the Program still doesn’t show in the list—what else can I try?",
+      "answer": "Refresh the Portal Form Assignment page, verify the Program History dates and Organization, and confirm the client is eligible. If the issue persists, re-open Program History to validate the entry and resubmit.",
       "category": "error",
       "tags": [
-        "form",
-        "client",
-        "acces",
-        "assigned",
-        "happen"
+        "program",
+        "history",
+        "list"
       ],
       "language": "en",
       "source_link": ""
     },
     {
-      "question": "I assigned a form but the portal shows nothing. Did I miss something?",
-      "answer": "This usually happens when the document instance was not properly configured with 'Include in Client Portal?' and a valid 'Client Portal Form ID'. Verify both fields and save the document again.",
-      "category": "error",
+      "question": "Where exactly do I configure Program History from the client record?",
+      "answer": "From the client’s ECR, navigate to Program History, click Add a new program history, select Organization and Program, set Begin Date/Time, then Submit.",
+      "category": "information",
       "tags": [
-        "portal",
-        "form",
-        "assigned",
-        "but",
-        "show",
-        "nothing",
-        "mis",
-        "something"
+        "program",
+        "history",
+        "client"
+      ],
+      "language": "en",
+      "source_link": ""
+    },
+    {
+      "question": "Why must the Program be added under the Organization I’m currently logged into?",
+      "answer": "For security and scoping reasons: assignments are limited to the staff’s current Organization context. A Program added under a different Organization will not be listed for assignment.",
+      "category": "information",
+      "tags": [
+        "program",
+        "organization"
       ],
       "language": "en",
       "source_link": ""
@@ -163,11 +236,7 @@
       "category": "information",
       "tags": [
         "portal",
-        "form",
-        "client",
-        "requirement",
-        "meet",
-        "receive"
+        "client"
       ],
       "language": "en",
       "source_link": ""
@@ -178,12 +247,7 @@
       "category": "information",
       "tags": [
         "portal",
-        "form",
-        "client",
-        "have",
-        "active",
-        "account",
-        "receive"
+        "client"
       ],
       "language": "en",
       "source_link": ""
@@ -197,10 +261,7 @@
         "form",
         "assignment",
         "client",
-        "email",
-        "mandatory",
-        "have",
-        "registered"
+        "email"
       ],
       "language": "en",
       "source_link": ""
@@ -210,11 +271,7 @@
       "answer": "Staff must have permissions to: (1) view the client, (2) access the forms module, (3) assign portal forms, and if applicable, (4) link forms to appointments. Without these permissions, assignment may fail or be unavailable.",
       "category": "information",
       "tags": [
-        "portal",
-        "form",
-        "permission",
-        "staff",
-        "assign"
+        "portal"
       ],
       "language": "en",
       "source_link": ""
@@ -225,10 +282,7 @@
       "category": "information",
       "tags": [
         "portal",
-        "form",
-        "requirement",
-        "meet",
-        "assigned"
+        "form"
       ],
       "language": "en",
       "source_link": ""
@@ -240,8 +294,7 @@
       "tags": [
         "form",
         "client",
-        "carelogic",
-        "assigned"
+        "carelogic"
       ],
       "language": "en",
       "source_link": ""
@@ -251,11 +304,7 @@
       "answer": "Yes. You can assign the same form to multiple clients by repeating the assignment flow.",
       "category": "information",
       "tags": [
-        "form",
-        "client",
-        "same",
-        "assigned",
-        "multiple"
+        "form"
       ],
       "language": "en",
       "source_link": ""
@@ -266,9 +315,7 @@
       "category": "information",
       "tags": [
         "form",
-        "client",
-        "edit",
-        "submitting"
+        "client"
       ],
       "language": "en",
       "source_link": ""
@@ -279,10 +326,7 @@
       "category": "information",
       "tags": [
         "form",
-        "client",
-        "notification",
-        "receive",
-        "assigned"
+        "client"
       ],
       "language": "en",
       "source_link": ""
@@ -293,9 +337,7 @@
       "category": "information",
       "tags": [
         "form",
-        "client",
-        "submit",
-        "happen"
+        "client"
       ],
       "language": "en",
       "source_link": ""
@@ -306,10 +348,8 @@
       "category": "flow",
       "tags": [
         "form",
-        "sync",
         "carelogic",
-        "long",
-        "take"
+        "sync"
       ],
       "language": "en",
       "source_link": ""
@@ -319,10 +359,7 @@
       "answer": "It is saved as a PDF. The PDF reflects the form responses and is available for download and audit.",
       "category": "information",
       "tags": [
-        "form",
-        "format",
-        "submitted",
-        "saved"
+        "form"
       ],
       "language": "en",
       "source_link": ""
@@ -335,11 +372,7 @@
         "form",
         "client",
         "document",
-        "library",
-        "submitted",
-        "but",
-        "not",
-        "appear"
+        "library"
       ],
       "language": "en",
       "source_link": ""
@@ -350,10 +383,7 @@
       "category": "information",
       "tags": [
         "form",
-        "carelogic",
-        "where",
-        "completed",
-        "stored"
+        "carelogic"
       ],
       "language": "en",
       "source_link": ""
@@ -363,11 +393,7 @@
       "answer": "Any user with permissions to view the client’s Document Library and associated clinical documents. Visibility depends on your organization's roles/permissions.",
       "category": "information",
       "tags": [
-        "form",
-        "client",
-        "who",
-        "see",
-        "submitted"
+        "client"
       ],
       "language": "en",
       "source_link": ""
@@ -377,9 +403,7 @@
       "answer": "Yes. You can unassign the pending form. The client will no longer be able to complete it. If you need to replace it, create a new assignment with the correct form.",
       "category": "information",
       "tags": [
-        "form",
-        "assigned",
-        "canceled"
+        "form"
       ],
       "language": "en",
       "source_link": ""
@@ -390,11 +414,7 @@
       "category": "information",
       "tags": [
         "form",
-        "client",
-        "has",
-        "already",
-        "submitted",
-        "reopened"
+        "client"
       ],
       "language": "en",
       "source_link": ""
@@ -405,11 +425,7 @@
       "category": "error",
       "tags": [
         "form",
-        "client",
-        "not",
-        "see",
-        "assigned",
-        "fix"
+        "client"
       ],
       "language": "en",
       "source_link": ""
@@ -419,9 +435,7 @@
       "answer": "Check: (1) your assignment permissions, (2) that the form is enabled for the portal, (3) that the client has an active portal and valid email, and (4) possible restrictions in your environment.",
       "category": "error",
       "tags": [
-        "form",
-        "assign",
-        "check"
+        "form"
       ],
       "language": "en",
       "source_link": ""
@@ -432,10 +446,7 @@
       "category": "flow",
       "tags": [
         "form",
-        "client",
-        "know",
-        "has",
-        "submitted"
+        "client"
       ],
       "language": "en",
       "source_link": ""
@@ -447,11 +458,7 @@
       "tags": [
         "portal",
         "form",
-        "assignment",
-        "meet",
-        "security",
-        "audit",
-        "requirement"
+        "assignment"
       ],
       "language": "en",
       "source_link": ""
