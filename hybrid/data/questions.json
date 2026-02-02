@@ -1,466 +1,1725 @@
 [
-    {
-      "question": "Why doesn’t the Program appear in the Portal Form Assignment dropdown for this client?",
-      "answer": "The client likely does not have an active Program in Program History under your current login Organization. Go to the client’s ECR → Program History → Add a new program history → select the same Organization you are logged into (e.g., Default Oak Organization) → choose the Program → submit.",
-      "category": "information",
-      "tags": [
-        "portal",
-        "form",
-        "assignment",
-        "program",
-        "client",
-        "dropdown"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "I clicked “Assign a Form” but the Program list is empty. What’s wrong?",
-      "answer": "The Program list will be empty if the client has no Program enrolled in Program History. Add a new Program History entry with the correct Organization and Program, then submit and refresh the assignment screen.",
-      "category": "error",
-      "tags": [
-        "form",
-        "program",
-        "list"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "The Program exists in the system but I still cannot select it—could this be an Organization mismatch?",
-      "answer": "Yes. If the Program History entry is saved under a different Organization than the one you are logged into, it will not appear. Re-add the Program under your current login Organization and submit.",
-      "category": "error",
-      "tags": [
-        "program",
-        "organization"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "I added Program History but the Program still doesn’t show. Did I miss a required field?",
-      "answer": "Ensure you completed the minimum required fields—Begin Date/Time, Organization, and Program—and clicked Submit. After submitting, return to Portal Form Assignment and refresh.",
-      "category": "error",
-      "tags": [
-        "program",
-        "history"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Could invalid dates prevent the Program from appearing in assignments?",
-      "answer": "Yes. A future Begin Date/Time or conflicting discharge settings can hide the Program from current assignment flows. Use a valid current Begin Date/Time and submit.",
-      "category": "error",
-      "tags": [
-        "program"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "I see a message saying only programs the client is not currently active in are listed. Why?",
-      "answer": "The system filters based on Program activity and dates. Verify the client’s Program History status and date ranges, then adjust if necessary.",
-      "category": "error",
-      "tags": [
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Do I need special permissions to see the Program after adding it?",
-      "answer": "You must have access to the Organization and Program. Confirm your login Organization matches the Organization used in Program History and that your role permits assignments.",
-      "category": "information",
-      "tags": [
-        "program"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "How do I add a Program so it becomes selectable when assigning portal forms?",
-      "answer": "Open the client ECR → Program History → Add a new program history → choose the same Organization as your login (e.g., Default Oak Organization) → select the Program → fill the minimum required fields → Submit → return to Portal Form Assignment and refresh.",
-      "category": "flow",
-      "tags": [
-        "portal",
-        "program"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "What are the minimum fields I must fill in Program History for portal assignments?",
-      "answer": "Complete Begin Date/Time, Organization, and Program. Then click Submit. Optional fields are not required unless your policy demands them.",
-      "category": "information",
-      "tags": [
-        "portal",
-        "program",
-        "history"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "How do I ensure I’m using the correct Organization when adding the Program?",
-      "answer": "Match the Organization on the Program History entry to the Organization shown in your login header. If needed, switch your login Organization or re-add the Program under the correct one.",
-      "category": "flow",
-      "tags": [
-        "program",
-        "organization"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "What should I do immediately after submitting the new Program History entry?",
-      "answer": "Return to the Portal Form Assignment screen, click Assign a Form, and select the Program. If you don’t see it, refresh the page and try again.",
-      "category": "error",
-      "tags": [
-        "program",
-        "history"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "How can I quickly make a Program selectable for a new assignment?",
-      "answer": "Add a Program History entry using only the required fields (Begin Date/Time, Organization, Program), submit, then refresh the assignment screen.",
-      "category": "flow",
-      "tags": [
-        "assignment",
-        "program"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "How do I fix a Program saved under the wrong Organization?",
-      "answer": "Add a new Program History entry under the correct Organization that matches your login. Ensure dates are valid, submit, and then use the Program in Portal Form Assignment.",
-      "category": "error",
-      "tags": [
-        "program",
-        "organization"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Why does Program History affect the Program dropdown in Portal Form Assignment?",
-      "answer": "Portal Form Assignment filters available Programs by the client’s active Program History and the staff’s login Organization. Without a matching Program History entry, the Program won’t appear.",
-      "category": "information",
-      "tags": [
-        "portal",
-        "form",
-        "assignment",
-        "program",
-        "history",
-        "dropdown"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "How does the staff login Organization influence Program visibility?",
-      "answer": "Programs are Organization-scoped. The Program must be recorded in Program History under the same Organization you are logged into for it to appear in the assignment dropdown.",
-      "category": "flow",
-      "tags": [
-        "program",
-        "organization"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "What happens if the Program has a future Begin Date in Program History?",
-      "answer": "The Program may not be immediately available for assignments until the Begin Date/Time is reached. Use a current Begin Date/Time if you need to assign forms now.",
-      "category": "information",
-      "tags": [
-        "program",
-        "history",
-        "begin",
-        "date"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Do I need to mark the Program as Primary for it to show up?",
-      "answer": "Not necessarily. Visibility usually depends on having a valid Program History entry with required fields and correct Organization. Mark Primary only if your policy requires it.",
-      "category": "information",
-      "tags": [
-        "program",
-        "primary"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "I submitted Program History, but the Program still doesn’t show in the list—what else can I try?",
-      "answer": "Refresh the Portal Form Assignment page, verify the Program History dates and Organization, and confirm the client is eligible. If the issue persists, re-open Program History to validate the entry and resubmit.",
-      "category": "error",
-      "tags": [
-        "program",
-        "history",
-        "list"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Where exactly do I configure Program History from the client record?",
-      "answer": "From the client’s ECR, navigate to Program History, click Add a new program history, select Organization and Program, set Begin Date/Time, then Submit.",
-      "category": "information",
-      "tags": [
-        "program",
-        "history",
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Why must the Program be added under the Organization I’m currently logged into?",
-      "answer": "For security and scoping reasons: assignments are limited to the staff’s current Organization context. A Program added under a different Organization will not be listed for assignment.",
-      "category": "information",
-      "tags": [
-        "program",
-        "organization"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "What requirements must a client meet to receive forms through the portal?",
-      "answer": "The client must: (1) have an active portal account, (2) have a valid email address registered in their profile, and (3) be able to authenticate in the portal (web or mobile). Without these requirements, the client will not see or be able to complete assigned forms.",
-      "category": "information",
-      "tags": [
-        "portal",
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Does the client need to have an active portal account to receive forms?",
-      "answer": "Yes. Portal activation is required for the client to receive and complete assigned forms. If the account is not active, the client will not see the forms.",
-      "category": "information",
-      "tags": [
-        "portal",
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Is it mandatory for the client to have a registered email to use Portal Form Assignment?",
-      "answer": "Yes. The email is needed for portal activation and form notifications. Make sure the registered email matches the one the client uses to log in.",
-      "category": "information",
-      "tags": [
-        "portal",
-        "form",
-        "assignment",
-        "client",
-        "email"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "What permissions does the staff need to assign portal forms?",
-      "answer": "Staff must have permissions to: (1) view the client, (2) access the forms module, (3) assign portal forms, and if applicable, (4) link forms to appointments. Without these permissions, assignment may fail or be unavailable.",
-      "category": "information",
-      "tags": [
-        "portal"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "What requirements must a form meet to be assigned to the portal?",
-      "answer": "The form must be enabled for portal, published/available, and allow client submission. If a form is not configured for portal, it cannot be assigned.",
-      "category": "information",
-      "tags": [
-        "portal",
-        "form"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "How is a form assigned to the client from CareLogic?",
-      "answer": "Recommended flow: (1) Search and select the client, (2) choose the form enabled for portal, (3) link it to the corresponding appointment (recommended), (4) send the assignment. The client will receive the notification and can complete it in the portal.",
-      "category": "flow",
-      "tags": [
-        "form",
-        "client",
-        "carelogic"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Can the same form be assigned to multiple clients?",
-      "answer": "Yes. You can assign the same form to multiple clients by repeating the assignment flow.",
-      "category": "information",
-      "tags": [
-        "form"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Can the client edit the form after submitting it?",
-      "answer": "No. Once submitted, the form becomes a PDF and is no longer editable. If changes are needed, create a new assignment or an additional form.",
-      "category": "information",
-      "tags": [
-        "form",
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Does the client receive notifications when a form is assigned?",
-      "answer": "Yes, if the organization has notifications configured, the client may receive alerts by email and/or SMS. Make sure the email and mobile number in their profile are correct.",
-      "category": "information",
-      "tags": [
-        "form",
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "What happens when the client submits the form?",
-      "answer": "The system generates a PDF and syncs it to the client’s record in CareLogic (Document Library). Authorized staff can access the document almost in real time.",
-      "category": "information",
-      "tags": [
-        "form",
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "How long does it take for the form to sync with CareLogic?",
-      "answer": "It is normally almost immediate. If it does not appear after a few minutes, check attachment size limits.",
-      "category": "flow",
-      "tags": [
-        "form",
-        "carelogic",
-        "sync"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "In what format is the submitted form saved?",
-      "answer": "It is saved as a PDF. The PDF reflects the form responses and is available for download and audit.",
-      "category": "information",
-      "tags": [
-        "form"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "The client submitted the form but it does not appear in the Document Library. What should I do?",
-      "answer": "Verify: (1) that the form is linked to an appointment, (2) that attachments do not exceed the allowed limit, and (3) the permissions of the user checking. If everything is correct and it still does not appear, escalate to support with date, time, client, and form.",
-      "category": "error",
-      "tags": [
-        "form",
-        "client",
-        "document",
-        "library"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Where is the completed form stored in CareLogic?",
-      "answer": "In the client's Document Library. From there, authorized staff can view, download, or review the document.",
-      "category": "information",
-      "tags": [
-        "form",
-        "carelogic"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Who can see the forms submitted by the client?",
-      "answer": "Any user with permissions to view the client’s Document Library and associated clinical documents. Visibility depends on your organization's roles/permissions.",
-      "category": "information",
-      "tags": [
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Can an assigned form be canceled?",
-      "answer": "Yes. You can unassign the pending form. The client will no longer be able to complete it. If you need to replace it, create a new assignment with the correct form.",
-      "category": "information",
-      "tags": [
-        "form"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Can a form that has already been submitted by the client be reopened?",
-      "answer": "No. Once submitted, it becomes a non-editable PDF. If new information is needed, create a new assignment or a complementary form.",
-      "category": "information",
-      "tags": [
-        "form",
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "The client does not see the assigned form; how do I fix it?",
-      "answer": "Check: (1) active portal, (2) email matches the login email, (3) form enabled for portal and assigned correctly. If everything is correct, wait a few minutes and retry; if the issue persists, escalate.",
-      "category": "error",
-      "tags": [
-        "form",
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "I cannot assign the form, what should I check?",
-      "answer": "Check: (1) your assignment permissions, (2) that the form is enabled for the portal, (3) that the client has an active portal and valid email, and (4) possible restrictions in your environment.",
-      "category": "error",
-      "tags": [
-        "form"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "How do I know if the client has submitted the form?",
-      "answer": "Check the status of the form: when it changes to 'Completed', the PDF should be in the Document Library. You can also review internal alerts or notifications if they are enabled.",
-      "category": "flow",
-      "tags": [
-        "form",
-        "client"
-      ],
-      "language": "en",
-      "source_link": ""
-    },
-    {
-      "question": "Does Portal Form Assignment meet security and audit requirements?",
-      "answer": "Yes. Assignments, submissions, and access are logged for auditing according to your organization's configuration. Make sure to apply minimum necessary roles and permissions.",
-      "category": "information",
-      "tags": [
-        "portal",
-        "form",
-        "assignment"
-      ],
-      "language": "en",
-      "source_link": ""
-    }
-  ]
+  {
+    "question": "Why doesn’t the Program appear in the Portal Form Assignment dropdown for this client?",
+    "answer": "The client likely does not have an active Program in Program History under your current login Organization. Go to the client’s ECR → Program History → Add a new program history → select the same Organization you are logged into (e.g., Default Oak Organization) → choose the Program → submit.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "program",
+      "client",
+      "dropdown"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I clicked “Assign a Form” but the Program list is empty. What’s wrong?",
+    "answer": "The Program list will be empty if the client has no Program enrolled in Program History. Add a new Program in the Program History screen, entry with the correct Organization, then submit and refresh the assignment screen.",
+    "category": "error",
+    "tags": [
+      "form",
+      "program",
+      "list"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The Program exists in the system but I still cannot select it—could this be an Organization mismatch?",
+    "answer": "Yes. If the Program History entry is saved under a different Organization than the one you are logged into, it will not appear. Re-add the Program under your current login Organization and submit.",
+    "category": "error",
+    "tags": [
+      "program",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I added Program History but the Program still doesn’t show. Did I miss a required field?",
+    "answer": "Ensure you completed the minimum required fields—Begin Date/Time, Organization, and Program—and clicked Submit. After submitting, return to Portal Form Assignment and refresh.",
+    "category": "error",
+    "tags": [
+      "program",
+      "history"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Could invalid dates prevent the Program from appearing in assignments?",
+    "answer": "Yes. A future Begin Date/Time or conflicting discharge settings can hide the Program from current assignment flows. Use a valid current Begin Date/Time and submit.",
+    "category": "error",
+    "tags": [
+      "program"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I see a message saying only programs the client is not currently active in are listed. Why?",
+    "answer": "The system filters based on Program activity and dates. Verify the client’s Program History status and date ranges, then adjust if necessary.",
+    "category": "error",
+    "tags": [
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Do I need special permissions to see the Program after adding it?",
+    "answer": "You must have access to the Organization and Program. Confirm your login Organization matches the Organization used in Program History and that your role permits assignments.",
+    "category": "information",
+    "tags": [
+      "program"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I add a Program so it becomes selectable when assigning portal forms?",
+    "answer": "Open the client ECR → Program History → Add a New Program → choose the same Organization as your login (e.g., Default Oak Organization) → select the Program → fill the minimum required fields → Submit → return to Portal Form Assignment and refresh.",
+    "category": "flow",
+    "tags": [
+      "portal",
+      "program"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What are the minimum fields I must fill in Program History for portal assignments?",
+    "answer": "Complete Begin Date/Time, Organization, and Program. Then click Submit. Optional fields are not required unless your policy demands them.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "program",
+      "history"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I ensure I’m using the correct Organization when adding the Program?",
+    "answer": "Match the Organization on the Program History entry to the Organization shown in your login header. If needed, switch your login Organization or re-add the Program under the correct one.",
+    "category": "flow",
+    "tags": [
+      "program",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What should I do immediately after submitting the new Program History entry?",
+    "answer": "Return to the Portal Form Assignment screen, click Assign a Form, and select the Program. If you don’t see it, refresh the page and try again.",
+    "category": "error",
+    "tags": [
+      "program",
+      "history"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How can I quickly make a Program selectable for a new assignment?",
+    "answer": "Add a Program History entry using only the required fields (Begin Date/Time, Organization, Program), submit, then refresh the assignment screen.",
+    "category": "flow",
+    "tags": [
+      "assignment",
+      "program"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I fix a Program saved under the wrong Organization?",
+    "answer": "Add a new Program History entry under the correct Organization that matches your login. Ensure dates are valid, submit, and then use the Program in Portal Form Assignment.",
+    "category": "error",
+    "tags": [
+      "program",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why does Program History affect the Program dropdown in Portal Form Assignment?",
+    "answer": "Portal Form Assignment filters available Programs by the client’s active Program History and the staff’s login Organization. Without a matching Program History entry, the Program won’t appear.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "program",
+      "history",
+      "dropdown"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How does the staff login Organization influence Program visibility?",
+    "answer": "Programs are Organization-scoped. The Program must be recorded in Program History under the same Organization you are logged into for it to appear in the assignment dropdown.",
+    "category": "flow",
+    "tags": [
+      "program",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What happens if the Program has a future Begin Date in Program History?",
+    "answer": "The Program may not be immediately available for assignments until the Begin Date/Time is reached. Use a current Begin Date/Time if you need to assign forms now.",
+    "category": "information",
+    "tags": [
+      "program",
+      "history",
+      "begin",
+      "date"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Do I need to mark the Program as Primary for it to show up?",
+    "answer": "Not necessarily. Visibility usually depends on having a valid Program History entry with required fields and correct Organization. Mark Primary only if your policy requires it.",
+    "category": "information",
+    "tags": [
+      "program",
+      "primary"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I submitted Program History, but the Program still doesn’t show in the list—what else can I try?",
+    "answer": "Refresh the Portal Form Assignment page, verify the Program History dates and Organization, and confirm the client is eligible. If the issue persists, re-open Program History to validate the entry and resubmit.",
+    "category": "error",
+    "tags": [
+      "program",
+      "history",
+      "list"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Where exactly do I configure Program History from the client record?",
+    "answer": "From the client’s ECR, navigate to Program History, click Add a new program history, select Organization and Program, set Begin Date/Time, then Submit.",
+    "category": "information",
+    "tags": [
+      "program",
+      "history",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why must the Program be added under the Organization I’m currently logged into?",
+    "answer": "For security and scoping reasons: assignments are limited to the staff’s current Organization context. A Program added under a different Organization will not be listed for assignment.",
+    "category": "information",
+    "tags": [
+      "program",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What requirements must a client meet to receive forms through the portal?",
+    "answer": "The client must: (1) have an active portal account, (2) have a valid email address registered in their profile, and (3) be able to authenticate in the portal (web or mobile). Without these requirements, the client will not see or be able to complete assigned forms.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Does the client need to have an active portal account to receive forms?",
+    "answer": "Yes. Portal activation is required for the client to receive and complete assigned forms. If the account is not active, the client will not see the forms.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Is it mandatory for the client to have a registered email to use Portal Form Assignment?",
+    "answer": "Yes. The email is needed for portal activation and form notifications. Make sure the registered email matches the one the client uses to log in.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "client",
+      "email"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What permissions does the staff need to assign portal forms?",
+    "answer": "Staff must have permissions to: (1) view the client, (2) access the forms module, (3) assign portal forms, and if applicable, (4) link forms to appointments. Without these permissions, assignment may fail or be unavailable.",
+    "category": "information",
+    "tags": [
+      "portal"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What requirements must a form meet to be assigned to the portal?",
+    "answer": "The form must be enabled for portal, published/available, and allow client submission. If a form is not configured for portal, it cannot be assigned.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How is a form assigned to the client from CareLogic?",
+    "answer": "Recommended flow: (1) Search and select the client, (2) choose the form enabled for portal, (3) link it to the corresponding appointment (recommended), (4) send the assignment. The client will receive the notification and can complete it in the portal.",
+    "category": "flow",
+    "tags": [
+      "form",
+      "client",
+      "carelogic"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Can the same form be assigned to multiple clients?",
+    "answer": "Yes. You can assign the same form to multiple clients by repeating the assignment flow.",
+    "category": "information",
+    "tags": [
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Can the client edit the form after submitting it?",
+    "answer": "No. Once submitted, the form becomes a PDF and is no longer editable. If changes are needed, create a new assignment or an additional form.",
+    "category": "information",
+    "tags": [
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Does the client receive notifications when a form is assigned?",
+    "answer": "Yes, if the organization has notifications configured, the client may receive alerts by email and/or SMS. Make sure the email and mobile number in their profile are correct.",
+    "category": "information",
+    "tags": [
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What happens when the client submits the form?",
+    "answer": "The system generates a PDF and syncs it to the client’s record in CareLogic (Document Library). Authorized staff can access the document almost in real time.",
+    "category": "information",
+    "tags": [
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How long does it take for the form to sync with CareLogic?",
+    "answer": "It is normally almost immediate. If it does not appear after a few minutes, check attachment size limits.",
+    "category": "flow",
+    "tags": [
+      "form",
+      "carelogic",
+      "sync"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "In what format is the submitted form saved?",
+    "answer": "It is saved as a PDF. The PDF reflects the form responses and is available for download and audit.",
+    "category": "information",
+    "tags": [
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The client submitted the form but it does not appear in the Document Library. What should I do?",
+    "answer": "Verify: (1) that the form is linked to an appointment, (2) that attachments do not exceed the allowed limit, and (3) the permissions of the user checking. If everything is correct and it still does not appear, escalate to support with date, time, client, and form.",
+    "category": "error",
+    "tags": [
+      "form",
+      "client",
+      "document",
+      "library"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Where is the completed form stored in CareLogic?",
+    "answer": "In the client's Document Library. From there, authorized staff can view, download, or review the document.",
+    "category": "information",
+    "tags": [
+      "form",
+      "carelogic"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Who can see the forms submitted by the client?",
+    "answer": "Any user with permissions to view the client’s Document Library and associated clinical documents. Visibility depends on your organization's roles/permissions.",
+    "category": "information",
+    "tags": [
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Can an assigned form be canceled?",
+    "answer": "Yes. You can unassign the pending form. The client will no longer be able to complete it. If you need to replace it, create a new assignment with the correct form.",
+    "category": "information",
+    "tags": [
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Can a form that has already been submitted by the client be reopened?",
+    "answer": "No. Once submitted, it becomes a non-editable PDF. If new information is needed, create a new assignment or a complementary form.",
+    "category": "information",
+    "tags": [
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The client does not see the assigned form; how do I fix it?",
+    "answer": "Check: (1) active portal, (2) email matches the login email, (3) form enabled for portal and assigned correctly. If everything is correct, wait a few minutes and retry; if the issue persists, escalate.",
+    "category": "error",
+    "tags": [
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I cannot assign the form, what should I check?",
+    "answer": "Check: (1) your assignment permissions, (2) that the form is enabled for the portal, (3) that the client has an active portal and valid email, and (4) possible restrictions in your environment.",
+    "category": "error",
+    "tags": [
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I know if the client has submitted the form?",
+    "answer": "Check the status of the form: when it changes to 'Completed', the PDF should be in the Document Library. You can also review internal alerts or notifications if they are enabled.",
+    "category": "flow",
+    "tags": [
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Does Portal Form Assignment meet security and audit requirements?",
+    "answer": "Yes. Assignments, submissions, and access are logged for auditing according to your organization's configuration. Make sure to apply minimum necessary roles and permissions.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "assignment"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I see 'Error: Client missing email address or phone number.' when assigning a portal form. What does it mean?",
+    "answer": "The client\u2019s contact requirements are not met for portal notifications. Ensure the organization\u2019s 'Support OnCall Phone First Feature' is set to 'Phone or Email' or 'Email Only', and confirm the client has a valid Primary Email saved in ECR \u2192 Contact Information \u2192 Update Contact Information \u2192 Primary Email \u2192 Submit.",
+    "category": "error",
+    "tags": [
+      "portal",
+      "form",
+      "client",
+      "email"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "CareLogic shows 'Error: Client missing email address.' and the form won\u2019t send. How do I fix it?",
+    "answer": "Open the client\u2019s ECR, go to Contact Information, click 'Update Contact Information', enter a valid Primary Email, and Submit. Then resend the portal form assignment.",
+    "category": "error",
+    "tags": [
+      "form",
+      "client",
+      "carelogic",
+      "email"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The client didn\u2019t receive the portal notification\u2014could the Primary Email be missing?",
+    "answer": "Yes. If Primary Email is empty or invalid, the client won\u2019t receive invites or notifications. Update Primary Email in ECR \u2192 Contact Information \u2192 Update Contact Information \u2192 Primary Email \u2192 Submit, then resend.",
+    "category": "error",
+    "tags": [
+      "portal",
+      "client",
+      "email",
+      "notification",
+      "primary"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The client says they checked their portal but see no assignment\u2014what should I verify first?",
+    "answer": "Verify a valid Primary Email is saved in Contact Information and that your organization\u2019s 'Support OnCall Phone First Feature' is 'Phone or Email' or 'Email Only'. If needed, update Primary Email and resend.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "assignment",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The client recently changed their email and still did not get the notification\u2014what could be wrong?",
+    "answer": "They might be checking the old inbox linked to their previous portal account. Confirm the new Primary Email is saved, ask the client to check the new inbox (and spam), and resend the portal form assignment.",
+    "category": "information",
+    "tags": [
+      "client",
+      "email",
+      "notification"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What are the exact steps to configure a client\u2019s Primary Email so portal forms deliver correctly?",
+    "answer": "1) Ensure 'Support OnCall Phone First Feature' is 'Phone or Email' or 'Email Only' (Organizations \u2192 [Your login Organization] \u2192 ECR), 2) open the client\u2019s ECR, 3) go to Contact Information, 4) click 'Update Contact Information', 5) fill the Primary Email field, 6) Submit, 7) resend the portal form assignment.",
+    "category": "flow",
+    "tags": [
+      "portal",
+      "client",
+      "email",
+      "primary"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I verify the OnCall setting before updating the client\u2019s email?",
+    "answer": "Navigate to Organizations \u2192 select the Organization you are logged into \u2192 ECR \u2192 confirm 'Support OnCall Phone First Feature' is set to 'Phone or Email' or 'Email Only'. If not, update it per policy, then proceed to update the client\u2019s Primary Email.",
+    "category": "flow",
+    "tags": [
+      "client",
+      "email"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "After I add the Primary Email, what should I do to ensure delivery?",
+    "answer": "Submit the changes, return to Portal Form Assignment, and resend the assignment. Ask the client to check inbox and spam folders for the portal email.",
+    "category": "information",
+    "tags": [
+      "email",
+      "primary"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What should I do if the client is brand-new to the portal after I set Primary Email?",
+    "answer": "New clients will receive an email with a link to create their Client Portal account. Ask them to complete the account setup from that email, then they can access the assigned form.",
+    "category": "flow",
+    "tags": [
+      "portal",
+      "client",
+      "email",
+      "primary"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What is different if the client already has a portal account?",
+    "answer": "Existing clients receive an email prompting them to log in and review the assigned form in Client Portal. No new account creation is required\u2014just sign in and complete the form.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why is Primary Email required for portal form delivery?",
+    "answer": "Primary Email is used for portal invitations and notifications. Without it, the system cannot reach the client to inform them about portal form assignments.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "email",
+      "primary"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Where do I set or correct the client\u2019s Primary Email?",
+    "answer": "From the client\u2019s ECR \u2192 Contact Information \u2192 click 'Update Contact Information' \u2192 enter the Primary Email \u2192 Submit the form to save changes.",
+    "category": "information",
+    "tags": [
+      "client",
+      "email",
+      "primary"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What does the 'Support OnCall Phone First Feature' setting control for portal communications?",
+    "answer": "It defines whether the system will allow email-based notifications for portal interactions. Set it to 'Phone or Email' or 'Email Only' so email delivery is permitted for portal invitations and form notifications.",
+    "category": "information",
+    "tags": [
+      "portal"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I updated the Primary Email and still no email\u2014what else should I check?",
+    "answer": "Confirm there are no typos, ask the client to check spam/junk, ensure 'Support OnCall Phone First Feature' allows email, and then resend the assignment. If the client changed their email recently, ensure they check the new inbox.",
+    "category": "information",
+    "tags": [
+      "email",
+      "primary"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Do I need to reassign the form after correcting the Primary Email?",
+    "answer": "Yes. After saving the Primary Email, return to Portal Form Assignment and resend the form so the system issues a fresh email notification.",
+    "category": "information",
+    "tags": [
+      "form",
+      "email",
+      "primary"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What happens if the client changed their Primary Email recently?",
+    "answer": "They will receive portal notifications at the new Primary Email. Remind them to check the new mailbox and not the previous account\u2019s inbox, then resend the assignment if necessary.",
+    "category": "information",
+    "tags": [
+      "client",
+      "email",
+      "primary"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why is the 'Assign a Form' button disabled and I see 'Error: Client missing phone number'?",
+    "answer": "The client record is missing a phone number marked as primary. Open the client\u2019s ECR \u2192 Contact Information \u2192 Update Contact Information \u2192 enter a valid phone number \u2192 set 'Is Primary Phone' to Yes \u2192 Submit. Then return to Portal Form Assignment and the button should be enabled.",
+    "category": "error",
+    "tags": [
+      "form",
+      "client",
+      "phone",
+      "assign",
+      "button",
+      "error"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I get 'Error: Client missing email address or phone number.' and cannot add a new portal form\u2014what should I fix?",
+    "answer": "At least one contact method must be present. If you\u2019re addressing the phone path, add a valid phone and mark it as primary: ECR \u2192 Contact Information \u2192 Update Contact Information \u2192 Phone number \u2192 Is Primary Phone = Yes \u2192 Submit. Then try assigning the form again.",
+    "category": "error",
+    "tags": [
+      "portal",
+      "form",
+      "client",
+      "phone",
+      "email",
+      "error"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I added a phone number but the Assign button is still disabled\u2014what did I miss?",
+    "answer": "Ensure you set the radio button 'Is Primary Phone' to Yes and clicked Submit (not just Save/Reset). Refresh the Portal Form Assignment page after submitting.",
+    "category": "error",
+    "tags": [
+      "phone",
+      "assign",
+      "button"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why do I still see the missing phone number error after updating contact information?",
+    "answer": "Check that the phone number was entered in the correct field, flagged as primary, and successfully submitted. If your org uses phone formatting rules, ensure the number meets the required format, then submit again and refresh.",
+    "category": "error",
+    "tags": [
+      "contact",
+      "phone",
+      "error"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The client has multiple numbers\u2014why does the system still complain about a missing phone?",
+    "answer": "Only a number marked as the Primary Phone satisfies the requirement. Edit Contact Information, select the correct number, set 'Is Primary Phone' to Yes, and Submit.",
+    "category": "error",
+    "tags": [
+      "client",
+      "phone"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I enable the 'Assign a Form' button when the client has no phone on file?",
+    "answer": "1) Open the client\u2019s ECR, 2) go to Contact Information, 3) click 'Update Contact Information', 4) enter a valid phone number, 5) set 'Is Primary Phone' to Yes, 6) Submit, 7) return to Portal Form Assignment and refresh.",
+    "category": "flow",
+    "tags": [
+      "form",
+      "client",
+      "phone",
+      "assign",
+      "button"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What exact steps should I follow to set a Primary Phone for the client?",
+    "answer": "From ECR \u2192 Contact Information \u2192 Update Contact Information \u2192 add the phone in the appropriate field \u2192 toggle/select 'Is Primary Phone' = Yes \u2192 Submit to save changes.",
+    "category": "flow",
+    "tags": [
+      "client",
+      "primary",
+      "phone"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "After I set the Primary Phone, do I need to do anything else before assigning a form?",
+    "answer": "Yes. Submit the contact info changes, navigate back to Portal Form Assignment, refresh the page, and then click 'Assign a Form'. The button should now be enabled.",
+    "category": "flow",
+    "tags": [
+      "form",
+      "primary",
+      "phone"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I correct a phone number that was added without marking it as primary?",
+    "answer": "Return to ECR \u2192 Contact Information \u2192 Update Contact Information \u2192 select the correct number \u2192 set 'Is Primary Phone' to Yes \u2192 Submit. Refresh Portal Form Assignment and retry.",
+    "category": "flow",
+    "tags": [
+      "primary",
+      "phone"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The client has both email and phone missing. If I choose to fix the phone path, what is the minimal action?",
+    "answer": "Add a valid phone number and mark it as Primary Phone, then Submit. This satisfies the 'email address or phone number' requirement so you can assign a portal form.",
+    "category": "error",
+    "tags": [
+      "client",
+      "phone",
+      "email"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why does CareLogic require a phone number (or email) before assigning portal forms?",
+    "answer": "The system needs at least one primary contact method to notify or validate client communications. A Primary Phone or a Primary Email ensures the client can be reached regarding portal assignments.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "carelogic",
+      "phone",
+      "email"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What qualifies as a valid Primary Phone for portal assignment purposes?",
+    "answer": "A phone number entered in Contact Information that meets formatting rules for your organization and is flagged as the Primary Phone. Without the primary flag, the requirement is not met.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "assignment",
+      "primary",
+      "phone"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "If the organization prefers phone-first contact, will email alone work?",
+    "answer": "Depending on your org policy and settings, the system may require a phone or allow email-only. When the error mentions 'email address or phone number', providing either a Primary Email or a Primary Phone resolves it.",
+    "category": "information",
+    "tags": [
+      "contact",
+      "phone",
+      "email",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I set a Primary Phone but the Assign button is inconsistent\u2014sometimes enabled, sometimes not. Why?",
+    "answer": "This can happen if the change wasn\u2019t saved or the page wasn\u2019t refreshed. Ensure you clicked Submit in Contact Information, then fully reload the Portal Form Assignment page before trying again.",
+    "category": "information",
+    "tags": [
+      "primary",
+      "phone",
+      "assign",
+      "button"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What should I verify if the error persists after setting Primary Phone?",
+    "answer": "Confirm the number is stored under the correct client, the 'Is Primary Phone' flag is set, the format matches org rules (e.g., country code if required), and that you clicked Submit. Then refresh and retry assigning.",
+    "category": "error",
+    "tags": [
+      "primary",
+      "phone",
+      "error"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Does marking a phone as primary affect anything else in the client\u2019s record?",
+    "answer": "Marking a phone as primary designates it as the default contact channel for system checks and notifications. It does not change other demographics but is required for portal assignment eligibility when email is missing.",
+    "category": "information",
+    "tags": [
+      "client",
+      "primary",
+      "phone"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why is the 'Assign a Form' button disabled and I see an error about missing email?",
+    "answer": "The client record does not have a Primary Email configured. Open the client\u2019s ECR \u2192 Contact Information \u2192 Update Contact Information \u2192 enter a valid Primary Email \u2192 Submit. Once saved, return to Portal Form Assignment and the button will be enabled again.",
+    "category": "error",
+    "tags": [
+      "form",
+      "email",
+      "assign",
+      "button",
+      "error"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "CareLogic shows 'Error: Client missing email address or phone number.' and I can\u2019t assign a form\u2014what should I update?",
+    "answer": "If you want to resolve the issue through email, add a valid Primary Email under ECR \u2192 Contact Information \u2192 Update Contact Information \u2192 fill Primary Email \u2192 Submit. This satisfies the requirement and unlocks the assignment button.",
+    "category": "error",
+    "tags": [
+      "form",
+      "client",
+      "carelogic",
+      "phone",
+      "email",
+      "assign",
+      "error"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I entered an email but the system still shows missing email and the Assign button stays disabled. Why?",
+    "answer": "Make sure the email was entered in the 'Primary Email' field specifically and that you clicked Submit. Some clients only have Secondary Email or Direct Email filled, which does NOT satisfy the Primary Email requirement.",
+    "category": "error",
+    "tags": [
+      "email",
+      "assign",
+      "button"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The client updated their email recently\u2014could that cause the missing email warning?",
+    "answer": "Yes. If the old email was removed but the new one hasn\u2019t been added as Primary Email, the system will still show the missing email error. Make sure the new address is saved as Primary Email and Submit.",
+    "category": "error",
+    "tags": [
+      "client",
+      "email"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I correct the missing email error so the Assign Form button becomes available?",
+    "answer": "1) Go to the client\u2019s ECR, 2) open Contact Information, 3) click 'Update Contact Information', 4) enter a valid Primary Email, and 5) Submit. Then refresh the Portal Form Assignment page and proceed to assign the form.",
+    "category": "error",
+    "tags": [
+      "form",
+      "email",
+      "assign",
+      "button",
+      "error"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What steps should I follow to fix the blocked Assign button by setting Primary Email?",
+    "answer": "Open ECR \u2192 Contact Information \u2192 Update Contact Information \u2192 fill in Primary Email \u2192 Submit. After saving, navigate back to Portal Form Assignment and the button should be active.",
+    "category": "error",
+    "tags": [
+      "primary",
+      "email",
+      "assign",
+      "button"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "If the client already has a Secondary Email, do I still need to add a Primary Email?",
+    "answer": "Yes. Only the Primary Email satisfies the system requirement. Add the address to the Primary Email field, Submit, and then assign the form again.",
+    "category": "information",
+    "tags": [
+      "client",
+      "primary",
+      "email"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why does CareLogic require a Primary Email for portal forms, not just any email field?",
+    "answer": "CareLogic only validates the Primary Email field for identifying the client's main communication method. Secondary or Direct Email fields do not count toward enabling portal form assignment.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "carelogic",
+      "primary",
+      "email"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Does adding a Primary Email automatically allow portal notifications to be sent?",
+    "answer": "Yes. Once a valid Primary Email is saved, portal invitations and notifications will be routed to that address, enabling form delivery and portal access steps.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "primary",
+      "email"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What emails does the system use depending on the client\u2019s portal status?",
+    "answer": "For new clients, the Primary Email receives an invitation to create the portal account. For existing clients, the Primary Email receives notifications prompting them to check new portal form assignments.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "client",
+      "status"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why can\u2019t I see the 'Include in Client Portal?' option when creating a new Service Document?",
+    "answer": "This usually happens when 'OnCall Integration Turned On' is disabled for your login Organization. Go to Administration \u2192 System Admin \u2192 Organizations \u2192 select your Organization \u2192 ECR tab \u2192 set 'OnCall Integration Turned On' to YES \u2192 Submit. Then create or reopen the Service Document.",
+    "category": "error",
+    "tags": [
+      "portal",
+      "client",
+      "service",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The Portal Form Assignment page shows records but the 'Assign a Form' button is missing\u2014what\u2019s wrong?",
+    "answer": "When 'OnCall Integration Turned On' is OFF at the Organization level, the Assign button is hidden. Enable it via Administration \u2192 System Admin \u2192 Organizations \u2192 ECR \u2192 set 'OnCall Integration Turned On' = YES \u2192 Submit and refresh the page.",
+    "category": "error",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "assign",
+      "button"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "My form never appears in the 'Forms' list of the assignment modal\u2014could OnCall being off be the cause?",
+    "answer": "Yes. If OnCall is OFF, the 'Include in Client Portal?' option won\u2019t be available during document creation, preventing portal registration. Turn OnCall ON and update the document with 'Include in Client Portal?' = Yes and a valid Client Portal Form ID.",
+    "category": "information",
+    "tags": [
+      "form",
+      "assignment"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I enable OnCall to restore portal form features?",
+    "answer": "Navigate to Administration \u2192 System Admin \u2192 Organizations \u2192 pick the Organization you are logged into \u2192 open the ECR dropdown \u2192 set 'OnCall Integration Turned On' = YES \u2192 Submit. After that, the 'Assign a Form' button and the 'Include in Client Portal?' field will be available.",
+    "category": "flow",
+    "tags": [
+      "portal",
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What steps should I follow after turning OnCall ON to make a Service Document assignable?",
+    "answer": "1) Reopen or create the Service Document, 2) set 'Include in Client Portal?' = Yes, 3) populate 'Client Portal Form ID' (OnCall/Portal ID), 4) Save the instance, 5) Select organization option for the Service Document 6) Choose the logged Organization 7) return to Portal Form Assignment and assign the form.",
+    "category": "flow",
+    "tags": [
+      "service",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I created the document while OnCall was OFF. How do I fix it so it appears in the Forms list?",
+    "answer": "Edit the existing document instance: enable 'Include in Client Portal?' = Yes, add a valid 'Client Portal Form ID', and Save. If the toggle still doesn\u2019t appear, create a new instance now that OnCall is ON.",
+    "category": "information",
+    "tags": [
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What does the 'OnCall Integration Turned On' setting control?",
+    "answer": "It enables portal capabilities in your Organization: the 'Include in Client Portal?' option in Service Documents and the 'Assign a Form' button in Portal Form Assignment.",
+    "category": "information",
+    "tags": [],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Is enabling 'Include in Client Portal?' enough for the form to show in the modal?",
+    "answer": "Not by itself. The document must have 'Include in Client Portal?' = Yes AND a valid 'Client Portal Form ID' to be listed in the Portal Form Assignment modal.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I turned OnCall ON but still don\u2019t see 'Include in Client Portal?' on an older template\u2014what now?",
+    "answer": "Open the specific document instance and edit it. If the toggle is still missing, create a new instance after enabling OnCall. Then set 'Include in Client Portal?' = Yes and provide the Client Portal Form ID.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The 'Assign a Form' button disappeared after a configuration change\u2014how do I get it back?",
+    "answer": "Verify at the Organization level that 'OnCall Integration Turned On' is set to YES (Administration \u2192 System Admin \u2192 Organizations \u2192 ECR). Submit the change and refresh Portal Form Assignment.",
+    "category": "information",
+    "tags": [
+      "form",
+      "assign",
+      "button"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What is the minimum configuration for a Service Document to appear in the 'Forms' list?",
+    "answer": "Organization: 'OnCall Integration Turned On' = YES. Document instance: 'Include in Client Portal?' = Yes and a valid 'Client Portal Form ID'. Save the instance, then check the assignment modal.",
+    "category": "information",
+    "tags": [
+      "service",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why can I see existing assignments but can\u2019t create new ones?",
+    "answer": "Listing existing records can still work, but creating new portal assignments requires 'OnCall Integration Turned On' = YES. Enable it in Organization \u2192 ECR to show the 'Assign a Form' button.",
+    "category": "error",
+    "tags": [],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I enabled OnCall and set 'Include in Client Portal?' but the form still doesn\u2019t appear\u2014what else might be missing?",
+    "answer": "Confirm that 'Client Portal Form ID' is populated and that you Saved the instance. After saving, refresh the Portal Form Assignment page and search by the form name.",
+    "category": "error",
+    "tags": [
+      "portal",
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I verify I\u2019m editing the correct Organization\u2019s settings for OnCall?",
+    "answer": "Match the Organization shown in your login header. In Administration \u2192 System Admin \u2192 Organizations, open that Organization\u2019s ECR settings and enable 'OnCall Integration Turned On' = YES \u2192 Submit.",
+    "category": "flow",
+    "tags": [
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Does turning OnCall ON automatically convert existing documents to portal-enabled?",
+    "answer": "No. Enabling OnCall exposes the portal options, but each Service Document must be explicitly configured with 'Include in Client Portal?' = Yes and a 'Client Portal Form ID' to be assignable.",
+    "category": "information",
+    "tags": [
+      "portal"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I created the Service Document without 'Include in Client Portal?' and without an ID\u2014why isn\u2019t it listed?",
+    "answer": "Documents created without 'Include in Client Portal?' = Yes and a valid 'Client Portal Form ID' are not registered for portal use and won\u2019t appear in the Forms list. Edit the instance to enable the toggle, add the ID, and Save.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "client",
+      "service",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why is my service document not showing in the 'Forms' list when I try to assign it from Portal Form Assignment?",
+    "answer": "The service document may not be associated with the Organization you are currently logged into. Go to Administration \u2192 Clinical Admin \u2192 Service Documents \u2192 locate the document \u2192 click 'Organization' \u2192 select your login Organization \u2192 Submit.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "assign",
+      "service",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The form I created does not appear in the portal assignment modal. Could this be related to its Organization?",
+    "answer": "Yes. If the service document is not assigned to the same Organization you\u2019re logged into, it will not display. Adjust it via Administration \u2192 Clinical Admin \u2192 Service Documents \u2192 Organization button \u2192 pick the correct Organization \u2192 Submit.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I enabled 'Include in Client Portal?' and set the PortalId, but the form still doesn't appear. What else might be missing?",
+    "answer": "Verify that the service document is linked to the correct Organization. Open Administration \u2192 Clinical Admin \u2192 Service Documents \u2192 Organization \u2192 assign it to your login Organization \u2192 Submit.",
+    "category": "error",
+    "tags": [
+      "portal",
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I associate a service document with the proper Organization so it appears in the 'Forms' list?",
+    "answer": "Navigate to Administration \u2192 Clinical Admin \u2192 Service Documents \u2192 search for the document \u2192 click the 'Organization' button \u2192 select the desired Organization \u2192 Submit. Once saved, the form will display in the Portal Form Assignment modal.",
+    "category": "flow",
+    "tags": [
+      "organization",
+      "service",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What steps should I follow if a form is not available in the portal because it is tied to the wrong Organization?",
+    "answer": "Go to Administration \u2192 Clinical Admin \u2192 Service Documents \u2192 locate the service document \u2192 click 'Organization' \u2192 set the Organization you want the form to appear under \u2192 Submit and refresh Portal Form Assignment.",
+    "category": "flow",
+    "tags": [
+      "portal",
+      "form",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I check which Organization a service document belongs to?",
+    "answer": "In Administration \u2192 Clinical Admin \u2192 Service Documents, find the document and click the 'Organization' button. This screen shows all Organizations currently assigned to that document. Add or adjust as needed and submit.",
+    "category": "flow",
+    "tags": [
+      "organization",
+      "service",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why must a service document be associated with my login Organization to appear in the assignment modal?",
+    "answer": "Portal Form Assignment only lists documents linked to the same Organization that the staff member is logged into. If the form belongs to another Organization, it will be hidden until reassigned.",
+    "category": "information",
+    "tags": [
+      "assignment",
+      "organization",
+      "service",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Does assigning the service document to the correct Organization affect anything else?",
+    "answer": "Yes. Organization assignment determines visibility in Portal Form Assignment and other workflows. If the document is not mapped to your login Organization, it cannot be assigned to clients.",
+    "category": "information",
+    "tags": [
+      "organization",
+      "service",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What happens if a service document is linked to multiple Organizations?",
+    "answer": "It becomes available to providers logged into any of those Organizations. As long as your login Organization is included, the document will appear in the 'Forms' list of the assignment modal.",
+    "category": "information",
+    "tags": [
+      "service",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why can't I add a Program from Program History for a brand\u2011new client?",
+    "answer": "This happens because new clients lack intake context and cannot receive Programs directly from Program History. You must first schedule an intake appointment through POE \u2192 POE Search \u2192 select client \u2192 Schedule Appointment \u2192 choose Organization, Program, Activity, set Date Range, mark client status as Active, and submit.",
+    "category": "information",
+    "tags": [
+      "client",
+      "program",
+      "history"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I tried adding a Program for a new client, but Program History won't let me. What\u2019s wrong?",
+    "answer": "New clients cannot receive Programs until they are scheduled for an intake appointment or assigned to a caseload. Use POE \u2192 Schedule Appointment to create the initial intake setup, then Program History will allow Program entries.",
+    "category": "information",
+    "tags": [
+      "client",
+      "program",
+      "history"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why do I get blocked when adding a Program to a client who was just created?",
+    "answer": "Newly created clients do not have intake details required for Program History. Schedule an appointment first through POE \u2192 Schedule Appointment, complete required fields, submit, and then the Program History will be editable.",
+    "category": "error",
+    "tags": [
+      "client",
+      "program"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How can I properly add a Program for a new client when Program History does not allow it?",
+    "answer": "Go to POE \u2192 POE Search \u2192 select the client \u2192 Schedule Appointment \u2192 pick your Organization, a Program, and an Activity \u2192 set the Date Range limits \u2192 mark client status Active \u2192 Submit \u2192 then select Assign client to caseload \u2192 choose provider \u2192 submit. After this, Program History will allow Program additions.",
+    "category": "flow",
+    "tags": [
+      "client",
+      "program",
+      "history"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What steps should I follow to assign a Program to a newly created client?",
+    "answer": "Use the intake workflow: POE Search \u2192 select client \u2192 Schedule Appointment \u2192 choose Organization, Program, and Activity \u2192 set date limits \u2192 activate client status \u2192 submit \u2192 Assign client to caseload \u2192 select provider \u2192 submit. Once done, you can add Programs through Program History.",
+    "category": "flow",
+    "tags": [
+      "client",
+      "assign",
+      "program"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I activate a new client so I can add Programs to their history?",
+    "answer": "Schedule the client for an intake: POE \u2192 POE Search \u2192 select client \u2192 Schedule Appointment \u2192 choose Organization, Program, Activity \u2192 input Date Range \u2192 mark as Active \u2192 submit \u2192 then assign the client to a caseload \u2192 submit.",
+    "category": "flow",
+    "tags": [
+      "client",
+      "history"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why do I need to schedule an appointment before adding a Program for a new client?",
+    "answer": "CareLogic requires an intake context before Program History becomes editable. Scheduling an appointment sets up the client\u2019s initial enrollment structure, enabling Programs to be added afterward.",
+    "category": "information",
+    "tags": [
+      "client",
+      "program"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What does assigning a client to a caseload accomplish for new clients?",
+    "answer": "Assigning a new client to a caseload completes the intake workflow, activating the client\u2019s record and unlocking Program History so Programs can be added.",
+    "category": "information",
+    "tags": [
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What does the message 'This client has been scheduled for an intake appointment or assigned to a caseload' mean?",
+    "answer": "It confirms the client has been initialized with intake or caseload information. After this message appears, you can proceed to Program History and add Programs normally.",
+    "category": "information",
+    "tags": [
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why can't I see a form in Portal Form Assignment even though I know it exists for this client?",
+    "answer": "You may be logged into a child Organization while the form was created under a parent Organization. Switch your login Organization by clicking the Organization name in the top-left, choose the parent Organization under 'New Organization', submit, and re-open Portal Form Assignment.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "A form added by another provider is not appearing for me\u2014could my Organization be the issue?",
+    "answer": "Yes. If the form was added under a parent Organization and you are logged into a child Organization, you won\u2019t see it. Switch to the Organization where the form was created using the Organization selector in the top-left corner.",
+    "category": "information",
+    "tags": [
+      "form",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why does the Portal Form Assignment list show only some of the forms for my client?",
+    "answer": "Forms created under a different Organization are hidden if you\u2019re logged into a child Organization. Change your login Organization to the one used when the form was created, then refresh the client\u2019s Portal Form Assignment screen.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I switch to the correct Organization so I can view a missing form?",
+    "answer": "Click your current Organization name in the top-left corner \u2192 in the 'New Organization' dropdown select the Organization where the document was created \u2192 click Submit \u2192 reopen the client\u2019s ECR and Portal Form Assignment. The form should appear.",
+    "category": "error",
+    "tags": [
+      "form",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What steps should I follow if I know the form was created in another Organization?",
+    "answer": "1) Go to the Organization selector in the top-left, 2) choose the Organization where the form was originally added, 3) submit the change, 4) return to the client ECR \u2192 Portal Form Assignment. The form will now be visible.",
+    "category": "flow",
+    "tags": [
+      "form",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I find out which Organization I need to switch to?",
+    "answer": "Check the 'Organization' column in Portal Form Assignment if visible, or ask the provider who added the form which Organization they were logged into. Then use the Organization dropdown in the top-left to switch to that Organization and refresh the page.",
+    "category": "flow",
+    "tags": [
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why can't child Organizations see forms added at the parent Organization level?",
+    "answer": "CareLogic restricts visibility upward\u2014child Organizations cannot see forms or records created under parent Organizations. You must switch to the parent Organization to view them.",
+    "category": "information",
+    "tags": [
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why can I see forms created in child Organizations when I am logged into a parent Organization?",
+    "answer": "Parent Organizations inherit visibility of records created within their child Organizations. This allows providers logged into the parent Organization to view all forms created at lower levels.",
+    "category": "information",
+    "tags": [
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Does the Organization I\u2019m logged into affect which forms show in Portal Form Assignment?",
+    "answer": "Yes. Portal Form Assignment only displays forms from the Organization you're logged into and its child Organizations. If a form was created under a different Organization, you must switch to that Organization to view it.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "organization"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I\u2019m logged into a child Organization and only see some assignment history\u2014why are the others missing?",
+    "answer": "Records added from parent Organizations do not display when logged into a child Organization. Switch to the parent Organization using the Organization selector in the top-left corner, then open Portal Form Assignment again.",
+    "category": "error",
+    "tags": [
+      "assignment",
+      "organization",
+      "history"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What does the 'Complete' status mean in Portal Form Assignment?",
+    "answer": "'Complete' means the form was sent to the client, the client received it in the Client Portal, reviewed it, filled it out, and submitted it back to CareLogic. The full assignment workflow is finished.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "status"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why do some forms show a status of 'Sent'?",
+    "answer": "'Sent' indicates the form was successfully delivered to the client's Client Portal account but the client has not yet submitted it back. The form is still pending client action.",
+    "category": "information",
+    "tags": [
+      "status"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What does 'Unassigned' mean next to a form?",
+    "answer": "'Unassigned' appears when the provider clicks the 'Unassign' button. The form is removed from the client\u2019s portal and the assignment is canceled.",
+    "category": "information",
+    "tags": [
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How can I tell if a client has already completed the assigned form?",
+    "answer": "If the form shows the status 'Complete', it means the client opened it in the Client Portal, filled it out, and submitted it back to CareLogic.",
+    "category": "flow",
+    "tags": [
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What is the difference between 'Sent' and 'Complete'?",
+    "answer": "'Sent' means the form has been delivered to the client but not returned. 'Complete' means the client opened, completed, and submitted the form back into CareLogic.",
+    "category": "information",
+    "tags": [],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why does a form show 'Unassigned' even though it was previously sent?",
+    "answer": "When a provider clicks 'Unassign', the form is removed from the client\u2019s portal and marked as 'Unassigned'. This cancels the delivery, even if it had already been sent.",
+    "category": "information",
+    "tags": [
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Does the 'Sent' status guarantee that the client received the form?",
+    "answer": "Yes. 'Sent' means the form was successfully delivered to the client's Portal account. However, it does not confirm whether the client has opened it.",
+    "category": "information",
+    "tags": [
+      "form",
+      "client",
+      "status"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "If a form is marked 'Complete', what happens next?",
+    "answer": "Once a form is 'Complete', the completed document is available in CareLogic for review or further processing. No further client action is required.",
+    "category": "information",
+    "tags": [
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What happens to a form after it becomes 'Unassigned'?",
+    "answer": "When a form becomes 'Unassigned', it is removed from the client's Client Portal and will no longer be accessible to them unless you assign it again.",
+    "category": "information",
+    "tags": [
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Is it normal to see a mix of 'Sent', 'Unassigned', and 'Complete' in the assignment history?",
+    "answer": "Yes. These statuses reflect different stages of the client\u2019s interaction with the assigned forms: pending (Sent), returned (Complete), or canceled (Unassigned).",
+    "category": "information",
+    "tags": [
+      "assignment",
+      "history"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why doesn't the form appear in the Portal Form Assignment list when I try to send it to a client?",
+    "answer": "Forms without a PortalId do not appear in the Portal Form Assignment list. To make the form visible, you must enable 'Include in Client Portal?' and assign a valid 'Client Portal Form ID' in the document instance.",
+    "category": "error",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "client",
+      "list"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What does the 'Include in Client Portal?' setting do for a provider?",
+    "answer": "The 'Include in Client Portal?' setting determines whether the document instance is eligible to be shown in the client portal. When enabled, it unlocks the 'Client Portal Form ID' field required to register the form with the portal.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "client",
+      "include",
+      "provider"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why is the 'Client Portal Form ID' needed?",
+    "answer": "The 'Client Portal Form ID' is necessary to link the document instance to the client portal. Without this PortalId, the system cannot render or display the form for assignment.",
+    "category": "information",
+    "tags": [
+      "portal",
+      "form",
+      "client",
+      "id"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I configure a form so I can assign it to a client via the portal?",
+    "answer": "Follow these steps: (1) Create the document instance in Service Document, (2) enable 'Include in Client Portal?' = Yes, (3) add a value in 'Client Portal Form ID', and (4) save the document instance. The form will then appear in Portal Form Assignment.",
+    "category": "flow",
+    "tags": [
+      "portal",
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "What steps should I follow to make a new form available for client portal assignment?",
+    "answer": "You must create the form in Service Document, activate 'Include in Client Portal?', provide a PortalId in 'Client Portal Form ID', and save the instance. Once saved, the form will be available to assign from the Portal Form Assignment screen.",
+    "category": "flow",
+    "tags": [
+      "portal",
+      "form",
+      "assignment",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "How do I unlock the 'Client Portal Form ID' field when configuring a document?",
+    "answer": "'Client Portal Form ID' becomes available only after setting 'Include in Client Portal?' to Yes. Once enabled, the field becomes editable and you can assign the PortalId.",
+    "category": "flow",
+    "tags": [
+      "portal",
+      "form",
+      "client",
+      "id",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "Why is the 'Client Portal Form ID' still disabled even after I created the document?",
+    "answer": "The field remains locked until you set 'Include in Client Portal?' to Yes. Open the document instance, enable the option, and the PortalId field will become editable.",
+    "category": "error",
+    "tags": [
+      "portal",
+      "form",
+      "client",
+      "id",
+      "document"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I configured the form but it still doesn't appear in the list. What could be wrong?",
+    "answer": "The form will not appear unless the document instance was saved after configuring the PortalId. Open the instance, verify the PortalId, and save it again.",
+    "category": "error",
+    "tags": [
+      "form",
+      "list"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "The client cannot access the form I assigned. Why could this happen?",
+    "answer": "The client will not see the assigned form if the PortalId was missing, incorrectly configured, or the document instance was not saved after setting the portal options.",
+    "category": "error",
+    "tags": [
+      "form",
+      "client"
+    ],
+    "language": "en",
+    "source_link": ""
+  },
+  {
+    "question": "I assigned a form but the portal shows nothing. Did I miss something?",
+    "answer": "This usually happens when the document instance was not properly configured with 'Include in Client Portal?' and a valid 'Client Portal Form ID'. Verify both fields and save the document again.",
+    "category": "error",
+    "tags": [
+      "portal",
+      "form"
+    ],
+    "language": "en",
+    "source_link": ""
+  }
+]
